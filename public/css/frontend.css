@@ -133,6 +133,7 @@ html {
 
 body {
   font-size: 1.8rem;
+  color: #1f1f1f;
   position: relative;
   overflow-x: hidden;
 }
@@ -229,7 +230,60 @@ video {
   font-weight: 900;
 }
 
+.container {
+  padding-left: calc(30px / 2);
+  padding-right: calc(30px / 2);
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container.fluid {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width:576px) {
+  .container {
+    width: 570px;
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.feature-item__text {
+  font-family: Montserrat-Light;
+  font-size: 1.6rem;
+}
 .feature-item__title {
   font-family: Montserrat-Bold;
   font-size: 2rem;
+}
+
+.text_secondary-1 {
+  opacity: .8;
+}
+.text_secondary-1 {
+  opacity: .8;
+}
+.text_secondary-2 {
+  opacity: .6;
+}
+.text_secondary-1 {
+  opacity: .8;
 }
