@@ -127,22 +127,14 @@ table {
 }
 
 html {
-  font-family: RobotoSlab-Light!important;
+  font-family: Montserrat-Light!important;
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 1.8rem;
   position: relative;
   overflow-x: hidden;
-}
-
-p {
-  font-family: RobotoSlab-Light;
-  text-indent: .5rem;
-  color: #3c3c3c;
-  margin-bottom: .6rem;
 }
 
 b {
