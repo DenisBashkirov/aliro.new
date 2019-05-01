@@ -13,5 +13,7 @@
 </head>
 <body>
 
+@include('frontend.sections.features')
+
 </body>
 </html>
