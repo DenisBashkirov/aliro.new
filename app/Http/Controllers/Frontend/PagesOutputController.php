@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Config;
 
 class PagesOutputController extends FrontendBaseController
 {
-    protected $page;
-
     public function __construct()
     {
         parent::__construct();
