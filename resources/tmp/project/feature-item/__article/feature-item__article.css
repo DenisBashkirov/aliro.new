@@ -1,0 +1,11 @@
+@media (min-width:768px) {
+  .feature-item__article {
+    text-align: center;
+  }
+}
+
+@media (max-width:767px) {
+  .feature-item__article {
+    flex-basis: calc(100% - 85px);
+  }
+}

@@ -336,18 +336,6 @@
     > *
       margin-top: initial
 
-@mixin flex-row($col-gap: $grid-column-gap)
-  display: flex
-  flex-direction: row
-  margin-left: -#{$col-gap}
-
-  > *
-    margin-left: #{$col-gap}
-
-
-@mixin flex-reset()
-  display: initial
-  margin: initial
 
 // Устанавливает колонку, в которую надо разместить элемент grid-сетки
 // $col (int) - порядковый номер колонки для размещения

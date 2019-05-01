@@ -18,5 +18,7 @@
 
 @include('frontend.sections.features')
 
+@include('frontend.sources.scripts')
+
 </body>
 </html>
