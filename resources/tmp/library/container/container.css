@@ -13,19 +13,19 @@
 
 @media (min-width:576px) {
   .container {
-    width: 570px;
+    width: 576px;
   }
 }
 
 @media (min-width:768px) {
   .container {
-    width: 750px;
+    width: 768px;
   }
 }
 
 @media (min-width:992px) {
   .container {
-    width: 990px;
+    width: 984px;
   }
 }
 
