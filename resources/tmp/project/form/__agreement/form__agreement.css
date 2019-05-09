@@ -1,0 +1,13 @@
+.form__agreement {
+  font-style: italic;
+  line-height: 120%;
+  margin: 0 3px;
+  opacity: .7;
+}
+
+@media (min-width:768px) {
+  .form__agreement {
+    text-align: right;
+    margin: 0;
+  }
+}
