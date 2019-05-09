@@ -16,7 +16,7 @@
 </head>
 <body>
 
-@include('frontend.sections.features')
+@yield('main_content')
 
 @include('frontend.sources.scripts')
 

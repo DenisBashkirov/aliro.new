@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('frontend.templates.main');
 });
 
+Route::get('/style', function () {
+    return view('frontend.pages.style');
+});
+
+Route::get('/style/articles', function () {
+    return view('frontend.pages.style.articles');
+});
+
 Auth::routes();
 
+
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');

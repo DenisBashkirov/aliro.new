@@ -1,0 +1,10 @@
+.link_arrowed {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link_arrowed .icon-arrow {
+  font-size: .9em;
+  margin-left: .55em;
+}

@@ -1,0 +1,14 @@
+.articles-preview-section {
+  position: relative;
+}
+
+.articles-preview-section:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 300px;
+  background: url(/public/img/sections/articles-previews/background.jpg) no-repeat center;
+  z-index: -1;
+}
