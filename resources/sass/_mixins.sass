@@ -192,14 +192,14 @@
 
 
 
-@mixin col-generate($template, $flex_direction: column, $row-gap: $grid-row-gap, $col-gap: $grid-column-gap)
+@mixin col-generate($template, $row-gap: $grid-row-gap, $col-gap: $grid-column-gap)
 
-  display: flex
-  flex-direction: $flex_direction
+  display: inline-flex
+  flex-direction: column
   flex-wrap: wrap
 
   @supports (display: grid)
-    display: grid
+    display: inline-grid
     grid-template-columns: 100%
     grid-template-rows: $template
     grid-row-gap: $row-gap

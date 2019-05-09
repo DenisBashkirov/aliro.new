@@ -1,0 +1,72 @@
+@import "../../../bootstrap"
+
+.form-group__input
+  box-sizing: border-box
+  width: 100%
+
+
+
+// FORM-GROUP LARGE
+.form-group_large .form-group__input
+  font-family: "Montserrat-Medium"
+  font-size: 1.8rem
+  height: 60px
+  padding: 0 19px
+  border: none
+
+  @media ($brpt_md)
+    width: 265px
+    font-size: 1.9rem
+
+  @media ($brpt_lg)
+    width: 300px
+    font-size: 2rem
+
+
+
+// FORM-GROUP BIG
+.form-group_big .form-group__input
+  font-family: "Montserrat-Medium"
+  font-size: 1.7rem
+  height: 55px
+  padding: 0 17px
+  border: none
+
+  @media ($brpt_md)
+    width: 255px
+    font-size: 1.8rem
+
+  @media ($brpt_lg)
+    width: 280px
+    font-size: 1.9rem
+
+
+
+// FORM-GROUP MEDIUM
+.form-group_medium .form-group__input
+  font-family: "Montserrat-Medium"
+  font-size: 1.6rem
+  height: 55px
+  padding: 0 15px
+  border: none
+
+  @media ($brpt_md)
+    width: 240px
+    font-size: 1.7rem
+
+  @media ($brpt_lg)
+    width: 250px
+    font-size: 1.8rem
+
+.form-group_horizontal
+  & .form-group__input:not(:first-child)
+    @media ($brpt_sm_max)
+      border-top: 1px solid rgba(#000,.15)
+    @media ($brpt_md)
+      border-left: 1px solid rgba(#000,.15)
+
+
+
+.form-group_vertical
+  & .form-group__input:not(:first-child)
+      border-top: 1px solid rgba(#000,.15)

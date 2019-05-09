@@ -1,0 +1,13 @@
+.button_big:not([type=submit]) {
+  width: 200px;
+  height: 60px;
+  font-size: 1.8rem;
+}
+
+@media (min-width:768px) {
+  .button_big {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}

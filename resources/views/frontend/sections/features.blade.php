@@ -39,3 +39,97 @@
 
     </div>
 </div>
+
+@include('frontend.sections.form-measuring')
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">large vertical</p>
+
+        <form action="#">
+            <div class="form-group form-group_vertical form-group_large form-group-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">big horizontal</p>
+
+        <form action="#">
+            <div class="form-group form-group_horizontal form-group_large group_large-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">big vertical</p>
+
+        <form action="#">
+            <div class="form-group form-group_vertical form-group_big form-group-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">big horizontal</p>
+
+        <form action="#">
+            <div class="form-group form-group_horizontal form-group_big group_big-group_big-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">medium vertical</p>
+
+        <form action="#">
+            <div class="form-group form-group_vertical form-group_medium form-group-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <p style="font-weight: bold; margin-bottom: 10px;">medium horizontal</p>
+
+        <form action="#">
+            <div class="form-group form-group_horizontal form-group_medium group_medium-group_medium-x3">
+                <input type="text" class="form-group__input" placeholder="Ваше имя">
+                <input type="text" class="form-group__input" placeholder="Телефон">
+                <button type="submit" class="form-group__submit">Получить скидку</button>
+            </div>
+        </form>
+
+    </div>
+</section>

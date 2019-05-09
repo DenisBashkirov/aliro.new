@@ -1,0 +1,8 @@
+@import "../../../bootstrap"
+
+.form-group_large
+@for $i from 1 through 5
+  &.form-group-x#{$i}
+    @media ($brpt_sm_max)
+      display: inline-grid
+      grid-template-rows: repeat($i, 55px)
