@@ -22,6 +22,7 @@ class CreatePvcProfilesTable extends Migration
                 $table->integer('width')->comment('Ширина профиля');
                 $table->integer('cameras')->comment('Количество камер');
                 $table->decimal('thermistance', 3, 2)->comment('Теплоизоляция (теплосопротивление');
+                $table->string('utp')->comment('Уникальность');
                 $table->integer('ordering')->nullable();
 
                 $table->foreign('category_id')->references('id')->on('pvc_profile_categories')->onDelete('cascade');
