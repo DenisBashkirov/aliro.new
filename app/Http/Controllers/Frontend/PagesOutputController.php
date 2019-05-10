@@ -30,6 +30,9 @@ class PagesOutputController extends FrontendBaseController
         $pvc_profile_categories = PvcProfileCategory::orderBy('ordering')->get();
         $this->vars = Arr::add($this->vars, 'pvc_profile_categories', $pvc_profile_categories);
 
+        $items_counter = 0;
+        $this->vars = Arr::add($this->vars, 'items_counter', $items_counter);
+
         $this->template = 'frontend.pages.style.profiles';
         return $this->renderOutput();
     }
