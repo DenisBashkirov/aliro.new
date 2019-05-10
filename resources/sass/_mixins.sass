@@ -51,6 +51,19 @@
   box-sizing: border-box
 
 
+@mixin section-full-vw()
+  width: 100vw
+  margin-left: (-#{$grid-column-gap / 2})
+
+
+
+
+@mixin flex-basis($percent)
+  flex-basis: calc(#{$percent} - #{$grid-column-gap / 2})
+
+
+
+
 /*
 /* NEW GRID
 /*
@@ -305,14 +318,15 @@
 
 
 
+
 //
 // $span - количество занимаемых колонок
 // $cols - общее количество колонок в родительской сетке
 @mixin grid-col-span($span, $cols, $col-gap: $grid-column-gap)
-  width: calc(((100% - #{$col-gap} * #{$cols}) / #{$cols}) * #{$span} + #{$col-gap} * #{$span - 1})
+  width: calc(((100% - #{$col-gap} * #{$cols}) / #{$cols}) * #{$span} + #{$col-gap} * #{$span - 1}) !important
 
   @supports (display: grid)
-    width: initial
+    width: initial !important
     grid-column: span $span
 
 

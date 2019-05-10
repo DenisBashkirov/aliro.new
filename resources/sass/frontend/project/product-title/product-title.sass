@@ -1,0 +1,14 @@
+@import "../../bootstrap"
+
+.product-title
+  position: relative
+  margin-left: 15px
+
+  &:before
+    content: ''
+    display: block
+    width: 10px
+    height: 100%
+    left: -15px
+    position: absolute
+    @include gradient-red

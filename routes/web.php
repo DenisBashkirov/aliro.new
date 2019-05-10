@@ -19,9 +19,16 @@ Route::get('/style', function () {
     return view('frontend.pages.style');
 });
 
+
 Route::get('/style/articles', function () {
     return view('frontend.pages.style.articles');
 });
+
+Route::get('/style/profiles', function () {
+    return view('frontend.pages.style.profiles');
+});
+
+
 
 Auth::routes();
 

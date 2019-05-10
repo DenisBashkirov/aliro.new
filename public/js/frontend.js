@@ -54,7 +54,7 @@ $(document).ready(function () {
      */
     if (viewportSmallerXl)
     {
-        var mySwiper = new Swiper ('.articles-preview-section__swiper', {
+        var articlesPreviewSectionSwiper = new Swiper ('.articles-preview-section__swiper', {
             loop: false,
             slidesPerView: 'auto',
             spaceBetween: 20,
@@ -62,6 +62,33 @@ $(document).ready(function () {
             slidesOffsetAfter: 15,
             slideClass: 'article-preview-card',
             breakpointsInverse: true,
+            breakpoints: {
+                768: {
+                    spaceBetween: 30,
+                }
+            }
+        })
+    }
+
+    /*
+    SWIPER - PROFILE-PREVIEW-PROPERTIES
+     */
+    if (viewportSmallerMd)
+    {
+        var profilePreviewPropertiesListSwiper = new Swiper ('.profile-preview-card__properties-swiper', {
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            slidesOffsetBefore: 15,
+            slidesOffsetAfter: 15,
+            slideClass: 'profile-preview-card__property-item',
+            breakpointsInverse: true,
+            centeredSlides: true,
+            initialSlide: 1,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+            },
             breakpoints: {
                 768: {
                     spaceBetween: 30,

@@ -1,0 +1,21 @@
+@import "../../bootstrap"
+
+.profile-preview-card
+
+  @media ($brpt_md)
+    display: flex
+    flex-wrap: wrap
+
+
+
+  & > *:not(:last-child)
+    margin-bottom: 20px
+
+    @media ($brpt_md)
+      margin-bottom: 30px
+
+    @media ($brpt_lg)
+      margin-bottom: 40px
+
+    @media ($brpt_xl)
+      margin-bottom: 50px

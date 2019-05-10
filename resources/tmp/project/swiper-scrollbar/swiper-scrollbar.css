@@ -1,0 +1,5 @@
+.swiper-scrollbar {
+  width: calc(100% - 30px)!important;
+  margin: 0 15px;
+  left: 0!important;
+}

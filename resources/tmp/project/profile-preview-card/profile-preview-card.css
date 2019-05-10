@@ -1,0 +1,26 @@
+.profile-preview-card>:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  .profile-preview-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-preview-card>:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:992px) {
+  .profile-preview-card>:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width:1200px) {
+  .profile-preview-card>:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
