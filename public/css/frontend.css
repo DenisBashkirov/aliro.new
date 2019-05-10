@@ -1631,13 +1631,41 @@ a.link {
 }
 .link_arrowed {
   display: inline-flex;
-  align-items: center;
+  flex-direction: row;
   text-decoration: none;
+  transition: all .45s ease;
+}
+
+.link_arrowed>* {
+  margin-right: .55em;
+}
+
+.link_arrowed>:last-child {
+  margin-right: 0;
+}
+
+@supports (display:grid) {
+  .link_arrowed {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    grid-column-gap: .55em;
+  }
+
+  .link_arrowed>* {
+    margin-right: 0;
+  }
+}
+
+.link_arrowed:hover {
+  grid-column-gap: .8em;
 }
 
 .link_arrowed .icon-arrow {
   font-size: .9em;
-  margin-left: .55em;
+  margin-top: .111em;
 }
 .list_checked li {
   position: relative;
