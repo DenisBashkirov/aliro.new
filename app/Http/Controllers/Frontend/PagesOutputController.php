@@ -24,6 +24,7 @@ class PagesOutputController extends FrontendBaseController
 
 
     public function home() {
+        $this->template = 'frontend.pages.style.profiles';
         return $this->renderOutput();
     }
 }

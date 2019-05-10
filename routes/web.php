@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.templates.main');
-});
 
 Route::get('/style', function () {
     return view('frontend.pages.style');
@@ -33,5 +30,4 @@ Route::get('/style/profiles', function () {
 Auth::routes();
 
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'Frontend\PagesOutputController@home')->name('home');
