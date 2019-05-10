@@ -997,14 +997,14 @@ a.link {
     margin-bottom: 50px;
   }
 }
+.section_padding-medium {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .progress-bar {
   position: relative;
   height: 15px;
   width: 100%;
-}
-.section_padding-medium {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .swiper-scrollbar {
   width: calc(100% - 30px)!important;
@@ -1262,6 +1262,21 @@ a.link {
 .button_primary:after {
   background: #d52e43;
   background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
+}
+.button_small {
+  font-family: Montserrat-Medium;
+  font-size: 1.4rem;
+  min-width: 15rem;
+  padding: 0 12px;
+  height: 4.5rem;
+  border-radius: 5px;
+}
+
+@media (min-width:992px) {
+  .button_small {
+    min-width: 16rem;
+    font-size: 1.5rem;
+  }
 }
 @media (min-width:768px) {
   .feature-item__article {
@@ -1847,6 +1862,9 @@ a.link {
     margin-left: -15px;
   }
 }
+.profile-preview-card__property-head-unit {
+  font-size: .45em;
+}
 .profile-preview-card__property-item {
   display: inline-flex;
   flex-direction: column;
@@ -1876,9 +1894,6 @@ a.link {
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 3px;
   }
-}
-.profile-preview-card__property-head-unit {
-  font-size: .45em;
 }
 .profile-preview-card__property-name {
   font-size: 1.4rem;
@@ -1916,8 +1931,6 @@ a.link {
   .profile-preview-card__utp {
     font-size: 1.4rem;
     height: 50px;
-    background: 0 0;
-    border: 1px solid rgba(0,0,0,.15);
   }
 }
 
@@ -1937,9 +1950,6 @@ a.link {
   position: relative;
   box-shadow: 0 0 2px rgba(0,0,0,.3);
 }
-.swiper-scrollbar_small {
-  height: 3px!important;
-}
 .progress-bar__filling {
   background: #d52e43;
   background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
@@ -1947,6 +1957,9 @@ a.link {
   top: 0;
   bottom: 0;
   left: 0;
+}
+.swiper-scrollbar_small {
+  height: 3px!important;
 }
 .text_secondary-1 {
   opacity: .8;
@@ -1957,19 +1970,4 @@ a.link {
 .container__section_full-vw {
   width: 100vw;
   margin-left: -15px;
-}
-.button_small {
-  font-family: Montserrat-Medium;
-  font-size: 1.4rem;
-  min-width: 15rem;
-  padding: 0 12px;
-  height: 4.5rem;
-  border-radius: 5px;
-}
-
-@media (min-width:992px) {
-  .button_small {
-    min-width: 16rem;
-    font-size: 1.5rem;
-  }
 }
