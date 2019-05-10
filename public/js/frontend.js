@@ -43,10 +43,15 @@ $(document).ready(function () {
         viewportSmallerSm = true;
 
 
-
+    /*
+    Перенос строк
+     */
     $('.js-hyphen').hyphenate();
 
 
+    /*
+    SWIPER - ARTICLES-PREVIEW-SECTION
+     */
     if (viewportSmallerXl)
     {
         var mySwiper = new Swiper ('.articles-preview-section__swiper', {
