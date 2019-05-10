@@ -7,6 +7,8 @@ use App\Feedback;
 use App\GalleryItem;
 use App\NavItem;
 use App\PopularService;
+use App\PvcProfile;
+use App\PvcProfileCategory;
 use App\Service;
 use App\ServiceCategory;
 use Illuminate\Http\Request;
@@ -24,6 +26,10 @@ class PagesOutputController extends FrontendBaseController
 
 
     public function home() {
+
+        $pvc_profile_categories = PvcProfileCategory::orderBy('ordering')->get();
+        $this->vars = Arr::add($this->vars, 'pvc_profile_categories', $pvc_profile_categories);
+
         $this->template = 'frontend.pages.style.profiles';
         return $this->renderOutput();
     }
