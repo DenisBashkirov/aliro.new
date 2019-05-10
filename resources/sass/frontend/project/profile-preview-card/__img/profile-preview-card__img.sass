@@ -3,10 +3,21 @@
 .profile-preview-card__img
   display: flex
   align-items: center
+  margin-top: 0 !important
 
   @media ($brpt_sm_max)
     width: 70%
     margin: 0 auto
 
   @media ($brpt_md)
-    @include flex-basis(50%)
+    @include flex-basis(50%) // для IE
+
+    display: flex
+    justify-content: center
+    
+    & img
+      max-width: 80%
+
+    @supports (display: grid)
+      @include grid-cols(1,1)
+      @include grid-rows(1,2)

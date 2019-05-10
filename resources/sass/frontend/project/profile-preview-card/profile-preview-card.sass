@@ -6,16 +6,8 @@
     display: flex
     flex-wrap: wrap
 
-
-
-  & > *:not(:last-child)
-    margin-bottom: 20px
-
-    @media ($brpt_md)
-      margin-bottom: 30px
-
-    @media ($brpt_lg)
-      margin-bottom: 40px
-
-    @media ($brpt_xl)
-      margin-bottom: 50px
+    @supports (display: grid)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: auto auto
+      grid-column-gap: $grid-column-gap

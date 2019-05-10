@@ -38,10 +38,9 @@
   .features-section__items-grid {
     display: flex;
     flex-direction: column;
-    margin-top: -20px;
   }
 
-  .features-section__items-grid>* {
+  .features-section__items-grid>:not(:first-child) {
     margin-top: 20px;
   }
 }

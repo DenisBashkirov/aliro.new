@@ -1,0 +1,56 @@
+@import "../../bootstrap"
+
+
+@each $size_name, $media, $margin-top in (mini, $brpt_sm_max, 30px), (mini, $brpt_md, 40px), (mini, $brpt_lg, 45px), (mini, $brpt_xl, 50px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+        > *:not(:first-child)
+          margin-top: #{$margin-top}
+
+
+
+@each $size_name, $media, $margin-top in (tiny, $brpt_sm_max, 50px), (tiny, $brpt_md, 60px), (tiny, $brpt_lg, 70px), (tiny, $brpt_xl, 80px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}
+
+
+
+@each $size_name, $media, $margin-top in (small, $brpt_sm_max, 60px), (small, $brpt_md, 80px), (small, $brpt_lg, 90px), (small, $brpt_xl, 100px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}
+
+
+
+@each $size_name, $media, $margin-top in (medium, $brpt_sm_max, 70px), (medium, $brpt_md, 90px), (medium, $brpt_lg, 100px), (medium, $brpt_xl, 120px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}
+      
+      
+
+@each $size_name, $media, $margin-top in (big, $brpt_sm_max, 80px), (big, $brpt_md, 100px), (big, $brpt_lg, 120px), (big, $brpt_xl, 150px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}
+      
+
+
+@each $size_name, $media, $margin-top in (large, $brpt_sm_max, 100px), (large, $brpt_md, 120px), (large, $brpt_lg, 150px), (large, $brpt_xl, 180px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}
+
+
+
+@each $size_name, $media, $margin-top in (huge, $brpt_sm_max, 120px), (huge, $brpt_md, 150px), (huge, $brpt_lg, 180px), (huge, $brpt_xl, 200px)
+  .section-column-#{$size_name}
+    @media (#{$media})
+      > *:not(:first-child)
+        margin-top: #{$margin-top}

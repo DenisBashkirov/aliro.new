@@ -8,6 +8,7 @@
 @media (min-width:768px) {
   .profile-preview-card__property-item {
     min-width: 162px;
+    max-width: 270px;
     -ms-grid-column-align: center;
     justify-self: center;
   }
