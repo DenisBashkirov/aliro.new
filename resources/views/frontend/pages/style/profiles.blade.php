@@ -94,4 +94,6 @@
 
     </section>
 
+    @include('frontend.sections.free-measuring-form')
+
 @endsection

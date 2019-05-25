@@ -37,6 +37,7 @@
 
 .form-group__submit {
   z-index: 1;
+  overflow: hidden;
 }
 
 .form-group_vertical .form-group__submit {

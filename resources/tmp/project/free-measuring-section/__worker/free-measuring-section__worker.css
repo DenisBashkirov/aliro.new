@@ -1,0 +1,24 @@
+.free-measuring-section__worker {
+  display: none;
+  position: relative;
+}
+
+@media (min-width:992px) {
+  .free-measuring-section__worker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 278px;
+    top: -362px;
+  }
+}
+
+@media (min-width:1200px) {
+  .free-measuring-section__worker {
+    width: 385px;
+    top: auto;
+    bottom: 0;
+  }
+}

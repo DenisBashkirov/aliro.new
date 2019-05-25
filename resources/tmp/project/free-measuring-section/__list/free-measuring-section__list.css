@@ -1,0 +1,21 @@
+@media (min-width:768px) {
+  .free-measuring-section__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .free-measuring-section__list>:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:767px) {
+  .free-measuring-section__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .free-measuring-section__list>:not(:first-child) {
+    margin-top: 10px;
+  }
+}

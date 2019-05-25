@@ -1,4 +1,43 @@
 @import "../../bootstrap"
 
 .free-measuring-section
-  background: url('/public/img/sections/free-measuring/background.jpg') center no-repeat
+  color: #fff
+  background: url('/public/img/sections/free-measuring-form/background.jpg') center no-repeat
+  position: relative
+  z-index: 1
+  padding-top: 30px
+
+
+  @media ($brpt_md)
+    padding-top: 60px
+    padding-bottom: calc(180px / 2)
+
+
+  @media ($brpt_xl)
+    padding-top: 70px
+    padding-bottom: calc(240px / 2)
+
+
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    display: block
+
+  &:before
+    background: rgba(#000,.5)
+    z-index: 2
+
+  &:after
+    @include gradient-red
+    opacity: .85
+    z-index: 3
+
+
+  & > *
+    position: relative
+    z-index: 5

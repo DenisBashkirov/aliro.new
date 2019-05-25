@@ -26,7 +26,6 @@ Route::get('/style/profiles', function () {
 });
 
 
-
 Auth::routes();
 
 

@@ -1,0 +1,15 @@
+.free-measuring-section__title {
+  margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  .free-measuring-section__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:992px) {
+  .free-measuring-section__title {
+    margin-bottom: 50px;
+  }
+}

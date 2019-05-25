@@ -1,0 +1,20 @@
+@media (min-width:768px) {
+  .free-measuring-section__worker-label {
+    font-size: 1.2rem;
+    font-family: Montserrat-Light;
+    color: #000;
+    font-style: italic;
+    background: #f0f0f0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) {
+  .free-measuring-section__worker-label {
+    width: auto;
+  }
+}
