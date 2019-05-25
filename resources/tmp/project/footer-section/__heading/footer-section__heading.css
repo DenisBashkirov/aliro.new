@@ -1,0 +1,10 @@
+.footer-section__heading {
+  font-family: Montserrat-Bold;
+  font-size: 1.9rem;
+}
+
+@media (min-width:768px) {
+  .footer-section__heading {
+    font-size: 2.2rem;
+  }
+}

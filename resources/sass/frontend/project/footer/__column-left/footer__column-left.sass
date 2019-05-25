@@ -1,0 +1,14 @@
+@import "../../../bootstrap"
+
+.footer__column-left
+
+  @media ($brpt_sm_max)
+    @include flex-column(30px)
+
+
+  @media ($brpt_md) and ($brpt_md_max)
+    @include flex-row(2, 100px)
+
+
+  @media ($brpt_lg)
+    @include flex-row(2)
