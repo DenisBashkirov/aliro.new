@@ -16,9 +16,13 @@
 </head>
 <body>
 
+@include('frontend.sections.header')
+
 @yield('main_content')
 
 @include('frontend.sources.scripts')
+
+@include('frontend.sections.footer')
 
 </body>
 </html>

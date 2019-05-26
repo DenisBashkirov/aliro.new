@@ -22,6 +22,7 @@ class PagesOutputController extends FrontendBaseController
     public function __construct()
     {
         parent::__construct();
+        $this->template = 'frontend' . $this->template;
     }
 
 
@@ -33,7 +34,7 @@ class PagesOutputController extends FrontendBaseController
         $items_counter = 0;
         $this->vars = Arr::add($this->vars, 'items_counter', $items_counter);
 
-        $this->template = 'frontend.pages.style.profiles';
+        //$this->template = 'frontend.pages.style.profiles';
         return $this->renderOutput();
     }
 }
