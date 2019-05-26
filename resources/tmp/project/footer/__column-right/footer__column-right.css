@@ -12,6 +12,8 @@
 
 @media (min-width:992px) {
   .footer__column-right {
+    display: flex;
+    justify-content: flex-end;
     padding-top: 0;
     margin-top: 0;
   }

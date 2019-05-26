@@ -4,6 +4,8 @@
 
 @section('main_content')
 
+    @include('frontend.sections.header')
+
     <section class="section section-column-large container">
 
 

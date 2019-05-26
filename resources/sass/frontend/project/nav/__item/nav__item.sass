@@ -1,0 +1,27 @@
+@import "../../../bootstrap"
+
+.nav__item
+  font-family: "Montserrat-Medium"
+  font-size: 1.8rem
+  color: inherit
+  text-decoration: none
+  cursor: default
+
+
+  @media ($brpt_md)
+    font-size: 1.4rem
+    @include flex-row(2, 3px)
+
+
+  @media ($brpt_lg)
+    font-size: 1.6rem
+    @include flex-row(2, 5px)
+
+
+  @media ($brpt_xl)
+    font-size: 1.8rem
+
+
+
+a.nav__item
+  cursor: pointer

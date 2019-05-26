@@ -1,0 +1,44 @@
+@media (min-width:768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav>* {
+    margin-right: 7px;
+  }
+
+  .nav>:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width:992px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav>* {
+    margin-right: 12px;
+  }
+
+  .nav>:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav>* {
+    margin-right: 30px;
+  }
+
+  .nav>:nth-child(5n) {
+    margin-right: 0;
+  }
+}
