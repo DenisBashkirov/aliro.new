@@ -17,6 +17,7 @@
 <body>
 
 @include('frontend.sections.header')
+@include('frontend.sections.title-screen')
 
 @yield('main_content')
 

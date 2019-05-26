@@ -2,7 +2,10 @@
 
 .header__phone
   font-family: "Montserrat-Bold"
-  color: $red-basic
+
+
+  @media ($brpt_sm_max)
+    display: none
 
 
   @media ($brpt_md)
@@ -19,6 +22,4 @@
 
 
   & a
-    background: linear-gradient(168.94deg, #FF2E2E 0%, #D52E43 80.27%)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    @include text-red

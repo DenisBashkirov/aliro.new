@@ -11,6 +11,7 @@ $red-light: #E32D3B
 
 //SIZES
 $header-height_sm: 54px
+$header-height_md: 60px
 
 @mixin text_xl()
   font-size: 2.2rem
@@ -22,3 +23,12 @@ $header-height_sm: 54px
 $duration_fast: 0.2s
 $duration_normal: 0.35s
 $duration_slow: 0.45s
+
+
+
+@mixin text-red()
+  color: $red-basic
+  @supports (display: grid)
+    background: linear-gradient(168.94deg, #FF2E2E 0%, #D52E43 80.27%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent

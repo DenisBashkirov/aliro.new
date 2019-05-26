@@ -407,4 +407,4 @@
 @mixin text-size($font-size, $ratio)
   @each $size_name in (mini, tiny, small, medium, big, large, massive)
     .text_#{$size_name}
-      font-size: #{$font-size} * #{$ratio}
+      font-size: calc(#{$font-size} * #{$ratio})

@@ -1,12 +1,17 @@
 .header__phone {
   font-family: Montserrat-Bold;
-  color: #df2647;
 }
 
 .header__phone a {
-  background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #df2647;
+}
+
+@supports (display:grid) {
+  .header__phone a {
+    background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @media (min-width:768px) {
@@ -24,5 +29,11 @@
 @media (min-width:1200px) {
   .header__phone {
     font-size: 3rem;
+  }
+}
+
+@media (max-width:767px) {
+  .header__phone {
+    display: none;
   }
 }

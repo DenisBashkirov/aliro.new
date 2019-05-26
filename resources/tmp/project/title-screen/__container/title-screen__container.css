@@ -1,0 +1,12 @@
+.title-screen__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 54px);
+}
+
+@media (min-width:768px) {
+  .title-screen__container {
+    height: calc(100vh - 60px);
+  }
+}
