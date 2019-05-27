@@ -1,3 +1,7 @@
+.list_checked {
+  margin-left: 1.5em;
+}
+
 .list_checked li {
   position: relative;
 }

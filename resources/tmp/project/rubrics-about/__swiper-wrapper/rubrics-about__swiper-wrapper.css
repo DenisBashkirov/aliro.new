@@ -1,0 +1,35 @@
+@media (min-width:1200px) {
+  .rubrics-about__swiper-wrapper {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -150px -15px 0 -15px;
+  }
+
+  .rubrics-about__swiper-wrapper>* {
+    margin: 150px 15px 0 15px;
+    width: calc((100% - 30px * 2)/ 2 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .rubrics-about__swiper-wrapper {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 150px;
+      align-items: start;
+      margin: 0;
+    }
+
+    .rubrics-about__swiper-wrapper>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+}

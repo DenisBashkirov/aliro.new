@@ -1,0 +1,15 @@
+.h2_mini {
+  font-size: 2rem;
+}
+
+@media (min-width:992px) {
+  .h2_mini {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .h2_mini {
+    font-size: 2.7rem;
+  }
+}

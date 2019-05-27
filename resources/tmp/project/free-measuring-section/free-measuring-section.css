@@ -3,7 +3,6 @@
   background: url(/public/img/sections/free-measuring-form/background.jpg) center no-repeat;
   position: relative;
   z-index: 1;
-  padding-top: 30px;
 }
 
 .free-measuring-section:after,
@@ -36,14 +35,12 @@
 
 @media (min-width:768px) {
   .free-measuring-section {
-    padding-top: 60px;
-    padding-bottom: calc(180px / 2);
+    margin-bottom: calc(180px / 2);
   }
 }
 
 @media (min-width:1200px) {
   .free-measuring-section {
-    padding-top: 70px;
-    padding-bottom: calc(240px / 2);
+    margin-bottom: calc(240px / 2);
   }
 }

@@ -1,0 +1,26 @@
+@import "../../../bootstrap"
+
+.rubrics-about__card
+  overflow: hidden
+  border-radius: 3px
+  min-width: 75vw
+  max-width: calc(100vw - #{$grid-column-gap})
+  height: 100%
+  box-sizing: border-box
+  box-shadow: 0 2px 12px #a8afc4
+
+
+
+  @media ($brpt_md)
+    min-width: auto
+    width: 570px
+    padding: 15px
+
+
+
+  @media ($brpt_xl)
+    box-shadow: 0 0 2px #a8afc4
+    transition: all $duration_normal
+
+    &:hover
+      box-shadow: 0 2px 12px #a8afc4

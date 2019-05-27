@@ -7,3 +7,9 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+
+button,
+button:after,
+button:before {
+  cursor: pointer;
+}

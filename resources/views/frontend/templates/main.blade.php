@@ -21,9 +21,10 @@
 
 @yield('main_content')
 
-@include('frontend.sources.scripts')
-
 @include('frontend.sections.footer')
+
+
+@include('frontend.sources.scripts')
 
 </body>
 </html>

@@ -1,5 +1,5 @@
-<section class="main-products">
-    <div class="container">
+<section class="main-products section-margin_large">
+    <div class="container distribute-items_large">
 
         <div class="section__header align-center font-weight_extrabold">
             <h2 class="h2_medium">Основная продукция компании</h2>
@@ -84,6 +84,7 @@
                     </div>
 
                 </div>
+                <div class="swiper-scrollbar hidden_xl"></div>
             </div>
 
         </div>

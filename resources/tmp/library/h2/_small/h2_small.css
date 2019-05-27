@@ -1,15 +1,15 @@
-.h2 {
+.h2_small {
   font-size: 2.6rem;
 }
 
 @media (min-width:992px) {
-  .h2 {
+  .h2_small {
     font-size: 3.2rem;
   }
 }
 
 @media (min-width:1200px) {
-  .h2 {
+  .h2_small {
     font-size: 3.6rem;
   }
 }

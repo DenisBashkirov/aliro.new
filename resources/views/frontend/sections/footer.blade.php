@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer section-margin_large">
     <div class="footer__container container">
 
         <div class="footer__socials">

@@ -1,0 +1,18 @@
+@import "../../../bootstrap"
+
+.list_dotted
+  margin-left: .7em
+
+  li
+    position: relative
+
+    &:before
+      content: ''
+      height: .4em
+      width: .4em
+      display: block
+      background: $red-basic
+      position: absolute
+      left: -.7em
+      border-radius: 50%
+      top: .3em

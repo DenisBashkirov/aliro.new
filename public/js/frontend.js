@@ -110,7 +110,30 @@ $(document).ready(function () {
             slidesOffsetAfter: 15,
             slideClass: 'main-products__category-card',
             breakpointsInverse: true,
-            //centeredSlides: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
+            }
+        })
+    }
+
+    /*
+    SWIPER - MAIN-PRODUCTS
+     */
+    if (viewportSmallerXl)
+    {
+        var rubricsAboutSwiper = new Swiper ('.rubrics-about__swiper-container', {
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            slidesOffsetBefore: 15,
+            slidesOffsetAfter: 15,
+            breakpointsInverse: true,
             scrollbar: {
                 el: '.swiper-scrollbar',
                 hide: false
