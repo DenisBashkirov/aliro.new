@@ -53,10 +53,8 @@
 
 @mixin section-full-vw()
   width: 100vw
-  margin-left: (-#{$grid-column-gap / 2})
-
-
-
+  //margin-left: (-#{$grid-column-gap / 2})
+  margin-left: calc((100vw - 100%) / -2)
 
 @mixin flex-basis($percent)
   flex-basis: calc(#{$percent} - #{$grid-column-gap / 2})

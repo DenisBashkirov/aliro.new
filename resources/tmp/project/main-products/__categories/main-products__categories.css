@@ -1,0 +1,16 @@
+.main-products__categories {
+  display: flex;
+}
+
+@media (min-width:1200px) {
+  .main-products__categories {
+    display: block;
+  }
+}
+
+@media (max-width:1199px) {
+  .main-products__categories {
+    width: 100vw;
+    margin-left: calc((100vw - 100%)/ -2);
+  }
+}

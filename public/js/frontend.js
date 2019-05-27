@@ -97,4 +97,30 @@ $(document).ready(function () {
         })
     }
 
+    /*
+    SWIPER - MAIN-PRODUCTS
+     */
+    if (viewportSmallerXl)
+    {
+        var mainProductsSwiper = new Swiper ('.main-products__swiper', {
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            slidesOffsetBefore: 15,
+            slidesOffsetAfter: 15,
+            slideClass: 'main-products__category-card',
+            breakpointsInverse: true,
+            //centeredSlides: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
+            }
+        })
+    }
+
 });

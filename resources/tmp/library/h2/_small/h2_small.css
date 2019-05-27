@@ -1,117 +1,15 @@
-.h2_small .text_mini {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_tiny {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_small {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_medium {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_big {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_large {
-  font-size: calc(16px * 1.625);
-}
-
-.h2_small .text_massive {
-  font-size: calc(16px * 1.625);
-}
-
-@media (min-width:768px) {
-  .h2_small .text_mini {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_tiny {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_small {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_medium {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_big {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_large {
-    font-size: calc(16px * 1.625);
-  }
-
-  .h2_small .text_massive {
-    font-size: calc(16px * 1.625);
-  }
+.h2 {
+  font-size: 2.6rem;
 }
 
 @media (min-width:992px) {
-  .h2_small .text_mini {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_tiny {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_small {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_medium {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_big {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_large {
-    font-size: calc(16px * 2);
-  }
-
-  .h2_small .text_massive {
-    font-size: calc(16px * 2);
+  .h2 {
+    font-size: 3.2rem;
   }
 }
 
 @media (min-width:1200px) {
-  .h2_small .text_mini {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_tiny {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_small {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_medium {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_big {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_large {
-    font-size: calc(16px * 2.25);
-  }
-
-  .h2_small .text_massive {
-    font-size: calc(16px * 2.25);
+  .h2 {
+    font-size: 3.6rem;
   }
 }

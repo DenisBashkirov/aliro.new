@@ -14,12 +14,12 @@
 
                     <h2 class="h2 h2_small align-center">{{ $pvc_category->name }}</h2>
 
-                    <section class="section section-column-small">
+                    <section class="section">
                         @foreach($pvc_category->profiles as $profile)
                             @php $items_counter++ @endphp
-                            <section class="section section-column-tiny">
+                            <section class="section">
 
-                                <div class="profile-preview-card section-column-mini">
+                                <div class="profile-preview-card">
 
                                     <div class="profile-preview-card__head">
                                         <h3 class="profile-preview-card__title product-title font-weight_bold">{{ $profile->name }}</h3>

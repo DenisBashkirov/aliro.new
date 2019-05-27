@@ -2,6 +2,6 @@
 
 @section('main_content')
 
-
+    @include('frontend.pages.home.main_products')
 
 @endsection

@@ -2,7 +2,9 @@
     <div class="header__container container">
 
         <div class="header__logo">
-            <img src="{{ asset('svg/company_logo/main.svg') }}" alt="Логотип Индустрия окон">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('svg/company_logo/main.svg') }}" alt="Логотип Индустрия окон">
+            </a>
         </div>
 
         <div class="header__menu">

@@ -1,0 +1,43 @@
+@import "../../../bootstrap"
+
+.main-products__category-card
+  color: #fff
+  border-radius: 3px
+  position: relative
+  padding: 25px
+  overflow: hidden
+  display: inline-block
+  box-sizing: border-box
+  width: auto !important
+  height: 100% !important
+
+  &:before
+    content: ''
+    @include gradient-red
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    opacity: .8
+
+  & a
+    color: inherit
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+
+  @media ($brpt_sm_max)
+    min-width: 75vw
+
+
+
+  @media ($brpt_md)
+    min-width: 462px
+
+
+
+  @media ($brpt_lg)
+    min-width: 370px

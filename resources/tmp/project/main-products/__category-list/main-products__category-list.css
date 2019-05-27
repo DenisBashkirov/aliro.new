@@ -1,0 +1,9 @@
+.main-products__category-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-products__category-list>:not(:first-child) {
+  margin-top: 20px;
+}
