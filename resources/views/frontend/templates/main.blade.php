@@ -17,7 +17,7 @@
 <body>
 
 @include('frontend.sections.header')
-@include('frontend.sections.title-screen')
+@component('frontend.sections.title-screen', ['title_screen_size'=>$title_screen_size]) @endcomponent
 
 @yield('main_content')
 

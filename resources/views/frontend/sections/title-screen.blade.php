@@ -1,5 +1,5 @@
-<div class="title-screen" style="background: url('/public/img/sections/title-screen/home_xl.jpg');">
-    <div class="title-screen__container container">
+<div class="title-screen title-screen_{{ $title_screen_size }}" style="background: url('/public/img/sections/title-screen/home_xl.jpg');">
+    <div class="title-screen__container title-screen__container_{{ $title_screen_size }} container">
 
         <div class="title-screen__page-title">
             <div class="title-screen__breadcrumbs breadcrumbs">

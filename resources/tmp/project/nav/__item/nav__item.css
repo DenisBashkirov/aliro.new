@@ -12,6 +12,9 @@ a.nav__item {
 
 @media (min-width:768px) {
   .nav__item {
+    height: 60px;
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
     display: flex;
     flex-direction: row;
@@ -45,5 +48,23 @@ a.nav__item {
 @media (min-width:1200px) {
   .nav__item {
     font-size: 1.8rem;
+    position: relative;
+  }
+
+  .nav__item:after {
+    content: '';
+    position: absolute;
+    background: #df2647;
+    width: calc(100% + 10px);
+    height: 2px;
+    bottom: 0;
+    left: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .2s;
+  }
+
+  .nav__item:hover:after {
+    transform: scaleX(1);
   }
 }

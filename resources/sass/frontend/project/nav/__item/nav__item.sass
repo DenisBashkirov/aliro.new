@@ -9,6 +9,9 @@
 
 
   @media ($brpt_md)
+    height: $header-height_md
+    display: flex
+    align-items: center
     font-size: 1.4rem
     @include flex-row(2, 3px)
 
@@ -20,6 +23,23 @@
 
   @media ($brpt_xl)
     font-size: 1.8rem
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      background: $red-basic
+      width: calc(100% + 10px)
+      height: 2px
+      bottom: 0
+      left: -5px
+      transform: scaleX(0)
+      transform-origin: left
+      transition: all $duration_fast
+
+    &:hover
+      &:after
+        transform: scaleX(1)
 
 
 

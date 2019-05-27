@@ -30,3 +30,4 @@ Auth::routes();
 
 
 Route::get('/', 'Frontend\PagesOutputController@home')->name('home');
+Route::get('/contacts', 'Frontend\PagesOutputController@contacts')->name('contacts');

@@ -20,7 +20,7 @@
                     <div class="nav__item-arrow"><span class="icon-arrow"></span></div>
                 </div>
                 <a href="#" class="nav__item">Отзывы <span class="nav__item-label">345</span></a>
-                <div class="nav__item">Контакты</div>
+                <a href="{{ route('contacts') }}" class="nav__item">Контакты</a>
             </nav>
         </div>
 
