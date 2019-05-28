@@ -4,22 +4,29 @@
   color: #fff
   border-radius: 3px
   position: relative
-  padding: 25px
+  padding: 25px 25px 30px
   overflow: hidden
   display: inline-block
   box-sizing: border-box
   width: auto !important
   height: 100% !important
 
-  &:before
+  &:before, &:after
     content: ''
-    @include gradient-red
     position: absolute
     left: 0
     right: 0
     top: 0
     bottom: 0
+
+  &:before
+    z-index: 2
+    background-color: rgba(#000,.5)
+
+  &:after
+    @include gradient-red
     opacity: .8
+    z-index: 3
 
   & a
     color: inherit

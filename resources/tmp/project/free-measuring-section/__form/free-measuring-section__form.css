@@ -4,6 +4,8 @@
   box-shadow: 0 4px 12px rgba(0,0,0,.23);
   padding: 30px 15px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 3;
 }
 
 .free-measuring-section__form .form__agreement {

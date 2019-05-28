@@ -11,7 +11,7 @@
                 <div class="main-products__swiper-wrapper swiper-wrapper">
 
                     <div class="main-products__category-card swiper-slide">
-                        <div class="main-products__category-background"></div>
+                        <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/okna.jpg') }})"></div>
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Окна</h3>
                             <div class="main-products__category-list">
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="main-products__category-card swiper-slide">
-                        <div class="main-products__category-background"></div>
+                        <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/dveri.jpg') }})"></div>
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Двери</h3>
                             <div class="main-products__category-list">
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="main-products__category-card swiper-slide">
-                        <div class="main-products__category-background"></div>
+                        <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/balkoni.jpg') }})"></div>
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Балконы и лоджии</h3>
                             <div class="main-products__category-list">
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="main-products__category-card swiper-slide">
-                        <div class="main-products__category-background"></div>
+                        <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/konstrukcii.jpg') }})"></div>
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Конструкции</h3>
                             <div class="main-products__category-list">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="main-products__category-card main-products__category-card_big swiper-slide">
-                        <div class="main-products__category-background"></div>
+                        <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/ostekleniye.jpg') }})"></div>
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Остекление</h3>
                             <div class="main-products__category-lists-group">

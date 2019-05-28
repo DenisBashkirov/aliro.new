@@ -1,15 +1,15 @@
 .free-measuring-section__title {
-  margin-bottom: 20px;
+  margin: 0 30px 20px;
 }
 
 @media (min-width:768px) {
   .free-measuring-section__title {
-    margin-bottom: 30px;
+    margin: 0 30px 30px;
   }
 }
 
 @media (min-width:992px) {
   .free-measuring-section__title {
-    margin-bottom: 50px;
+    margin: 0 40px 50px;
   }
 }

@@ -1,5 +1,7 @@
 .free-measuring-section__text {
   padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width:768px) {
