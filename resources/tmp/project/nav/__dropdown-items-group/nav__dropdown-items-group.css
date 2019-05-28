@@ -1,0 +1,23 @@
+.nav__category-content,
+.nav__dropdown-items-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__category-content>:not(:first-child),
+.nav__dropdown-items-group>:not(:first-child) {
+  margin-top: 10px;
+}
+
+@media (min-width:768px) {
+  .nav__category-content,
+  .nav__dropdown-items-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__category-content>:not(:first-child),
+  .nav__dropdown-items-group>:not(:first-child) {
+    margin-top: 7px;
+  }
+}

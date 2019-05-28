@@ -314,6 +314,38 @@
 
 
 
+// Выстраивает все прямые дочерние элементы в сетку по шаблону строки
+// $template - количество колонок в ряду (int)
+// $cols - количество колонок в ряду (int)
+// $col-gap - расстояние между колокнами (px)
+// $row-gap - расстояние между рядами (px)
+@mixin grid-template($template, $cols, $col-gap: $grid-row-gap, $row-gap: $grid-row-gap)
+  // правила для IE
+  width: calc(100% + #{$col-gap})
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  margin: -#{$row-gap} -#{$col-gap / 2} 0 -#{$col-gap / 2} // отрицательный отступ контейнера сетки для компенсации его выхода за пределы родителя из-за отступов элементов
+
+  > *
+    margin: #{$row-gap} #{$col-gap / 2} 0 #{$col-gap / 2} // вычисление отступов между колонками и рядами ($col-gap, $row-gap)
+    width: calc((100% - #{$col-gap} * #{$cols}) / #{$cols} - 0.5px) // вычисление ширины элементов, исходя из их количества в одном ряду ($cols)
+
+  @content // подключение контент-блока
+
+  @supports (display: grid)
+    // правила для нормальных браузеров
+    width: auto
+    display: grid //!important
+    grid-template-columns: $template
+    grid-column-gap: $col-gap
+    grid-row-gap: $row-gap
+    align-items: start
+    margin: 0 // сброс отступа
+    > *
+      margin: 0 // сброс отступа эелементов
+      width: initial // сброс ширины элементов
+      height: auto // устраняет баг, от которого высота элементов сетки всегда 100%
 
 
 

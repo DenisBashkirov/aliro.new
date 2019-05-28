@@ -130,6 +130,7 @@ html {
   font-family: Montserrat-Light!important;
   font-size: 62.5%;
   color: #1f1f1f;
+  overflow-x: hidden;
 }
 
 body {

@@ -3,4 +3,12 @@
 .header__menu
 
   @media ($brpt_sm_max)
-    display: none
+    display: block
+    position: absolute
+    top: 100%
+    width: 100vw
+    height: calc(100vh - #{$header-height_sm})
+    color: #fff
+    @include gradient-red
+    right: -100vw
+    transition: all $duration_fast

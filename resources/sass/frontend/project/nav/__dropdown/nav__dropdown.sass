@@ -1,0 +1,31 @@
+@import "../../../bootstrap"
+
+.nav__dropdown
+
+
+  @media ($brpt_sm_max)
+    position: fixed
+    top: $header-height_sm
+    height: calc(100vh - #{$header-height_sm})
+    width: 100vw
+    left: 100vw
+    transition: all $duration_fast
+    @include gradient-red
+    color: #fff
+    overflow-y: scroll
+    z-index: 5
+
+
+  @media ($brpt_md)
+    display: none
+    position: absolute
+    max-width: 900px
+    background: #fff
+    border-top: 1px solid rgba(#000,.07)
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
+    top: 100%
+    left: -5px
+    padding: 30px
+    box-shadow: 0 4px 7px rgba(168, 175, 196, 0.6)
+    z-index: 2

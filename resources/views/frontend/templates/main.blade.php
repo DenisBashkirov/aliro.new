@@ -16,10 +16,12 @@
 </head>
 <body>
 
-@include('frontend.sections.header')
-@component('frontend.sections.title-screen', ['title_screen_size'=>$title_screen_size]) @endcomponent
 
-@yield('main_content')
+@include('frontend.sections.header')
+<div class="body-wrapper">
+    @component('frontend.sections.title-screen', ['title_screen_size'=>$title_screen_size]) @endcomponent
+    @yield('main_content')
+</div>
 
 @include('frontend.sections.footer')
 
