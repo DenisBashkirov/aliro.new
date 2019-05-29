@@ -1,5 +1,5 @@
 @media (max-width:1199px) {
   .visible_xl {
-    display: none;
+    display: none!important;
   }
 }

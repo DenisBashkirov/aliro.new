@@ -49,7 +49,7 @@ gulp.task('sass', function () {
         .pipe(autoprefixer({
             grid: true,
             browsers: ['> 1%'],
-            cascade: false
+            cascade: false,
         }))
         .pipe(gulp.dest(config.sass.dest));
 });

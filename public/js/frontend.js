@@ -148,6 +148,31 @@ $(document).ready(function () {
 
 
     /*
+    SWIPER - PORTFOLIO-RECAP
+     */
+    if (viewportSmallerXl)
+    {
+        var portfolioRecapSwiper = new Swiper ('.portfolio-recap__swiper-container', {
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            slidesOffsetBefore: 15,
+            slidesOffsetAfter: 15,
+            breakpointsInverse: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
+            }
+        })
+    }
+
+
+    /*
     NAV DROPDOWNS
      */
     var $menuItems = $('.nav__item');

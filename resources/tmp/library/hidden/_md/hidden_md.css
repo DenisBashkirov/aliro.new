@@ -1,5 +1,5 @@
 @media (min-width:768px) {
   .hidden_md {
-    display: none;
+    display: none!important;
   }
 }
