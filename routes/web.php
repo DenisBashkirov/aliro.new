@@ -33,8 +33,15 @@ Auth::routes();
 Route::group(
     ['namespace'=>'Frontend'],
     function () {
-        Route::get('/', 'Frontend\PagesOutputController@home')->name('home');
-        Route::get('/products/{product}', 'Frontend\PagesOutputController@product')->name('home');
-        Route::get('/contacts', 'Frontend\PagesOutputController@contacts')->name('contacts');
+        Route::get('/', 'PagesOutputController@home')->name('home');
+        Route::get('/products/{product}', 'PagesOutputController@product')->name('home');
+        Route::get('/contacts', 'PagesOutputController@contacts')->name('contacts');
+    }
+);
+
+Route::group(
+    ['namespace'=>'Backend'],
+    function () {
+        Route::resource('/pages', 'PagesController');
     }
 );

@@ -12,7 +12,7 @@ const clean = require('gulp-clean');
 var public_dir = 'public/';
 var temp_dir = 'resources/tmp/';
 
-var serviceSide = 'frontend'; // сторона интерфейса ('frontend' / 'backend')
+var serviceSide = 'backend'; // сторона интерфейса ('frontend' / 'backend')
 
 const config = {
     watch: ['resources/sass/**/*.sass'],

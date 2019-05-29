@@ -1,8 +1,0 @@
-@media (min-width:768px) {
-  .section__header_linked {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}

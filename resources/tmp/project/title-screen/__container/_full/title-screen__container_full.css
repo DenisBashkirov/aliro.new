@@ -1,9 +1,0 @@
-.title-screen__container_full {
-  min-height: calc(100vh - 54px);
-}
-
-@media (min-width:768px) {
-  .title-screen__container_full {
-    height: calc(100vh - 60px);
-  }
-}

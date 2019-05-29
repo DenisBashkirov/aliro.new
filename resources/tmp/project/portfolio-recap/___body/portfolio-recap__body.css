@@ -1,6 +1,0 @@
-@media (max-width:1199px) {
-  .portfolio-recap__body {
-    width: 100vw;
-    margin-left: calc((100vw - 100%)/ -2);
-  }
-}

@@ -1,9 +1,0 @@
-.portfolio-recap__swiper-container {
-  padding-bottom: 15px;
-}
-
-@media (min-width:1200px) {
-  .portfolio-recap__swiper-container {
-    padding-bottom: 0;
-  }
-}

@@ -1,9 +1,0 @@
-.portfolio-recap__card {
-  width: calc(100vw - 30px);
-}
-
-@media (min-width:768px) {
-  .portfolio-recap__card {
-    width: 350px;
-  }
-}

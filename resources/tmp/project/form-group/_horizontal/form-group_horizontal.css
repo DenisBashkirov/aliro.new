@@ -1,6 +1,0 @@
-@media (min-width:768px) {
-  .form-group_horizontal {
-    display: inline-flex;
-    flex-direction: row;
-  }
-}

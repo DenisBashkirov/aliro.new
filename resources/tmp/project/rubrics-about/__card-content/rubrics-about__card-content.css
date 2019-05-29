@@ -1,9 +1,0 @@
-.rubrics-about__card-content {
-  padding: 8px 15px 15px;
-}
-
-@media (min-width:768px) {
-  .rubrics-about__card-content {
-    padding: 15px;
-  }
-}

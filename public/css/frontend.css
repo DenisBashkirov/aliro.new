@@ -239,9 +239,6 @@ video {
   font-style: normal;
   font-weight: 900;
 }
-.align-center {
-  text-align: center;
-}
 .container {
   padding-left: calc(30px / 2);
   padding-right: calc(30px / 2);
@@ -277,6 +274,9 @@ video {
   .container {
     width: 1200px;
   }
+}
+.align-center {
+  text-align: center;
 }
 @media (min-width:768px) {
   .grid-cols-span-md-2 {
@@ -1302,21 +1302,6 @@ a.link {
   background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
 }
 
-.h2_medium {
-  font-size: 2.9rem;
-}
-
-@media (min-width:992px) {
-  .h2_medium {
-    font-size: 3.6rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .h2_medium {
-    font-size: 4.1rem;
-  }
-}
 .h2_mini {
   font-size: 2rem;
 }
@@ -1330,6 +1315,21 @@ a.link {
 @media (min-width:1200px) {
   .h2_mini {
     font-size: 2.7rem;
+  }
+}
+.h2_medium {
+  font-size: 2.9rem;
+}
+
+@media (min-width:992px) {
+  .h2_medium {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .h2_medium {
+    font-size: 4.1rem;
   }
 }
 .h2_small {
@@ -1347,13 +1347,13 @@ a.link {
     font-size: 3.6rem;
   }
 }
-@media (min-width:768px) {
-  .hidden_md {
+@media (min-width:1200px) {
+  .hidden_xl {
     display: none!important;
   }
 }
-@media (min-width:1200px) {
-  .hidden_xl {
+@media (min-width:768px) {
+  .hidden_md {
     display: none!important;
   }
 }
@@ -1630,11 +1630,11 @@ a.link {
     margin-top: 20px;
   }
 }
-.font-weight_bold {
-  font-family: Montserrat-Bold;
-}
 .font-weight_extrabold {
   font-family: Montserrat-ExtraBold;
+}
+.font-weight_bold {
+  font-family: Montserrat-Bold;
 }
 .font-weight_medium {
   font-family: Montserrat-Medium;
@@ -3531,17 +3531,17 @@ a.nav__item {
 .text_secondary-1 {
   opacity: .8;
 }
+.title-screen__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .text_secondary-2 {
   opacity: .6;
 }
 
 .title-screen_small {
   border-bottom: 1px solid rgba(0,0,0,.15);
-}
-.title-screen__container {
-  height: 100%;
-  display: flex;
-  align-items: center;
 }
 .title-screen__page-title {
   background: #fff;
