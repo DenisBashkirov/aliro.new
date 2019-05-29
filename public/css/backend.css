@@ -128,7 +128,10 @@ table {
 
 body,
 html {
-  height: 100%;
+  min-height: 100vh;
+}
+.body-wrapper {
+  padding: 120px 15px 15px;
 }
 .height-full {
   height: 100%;

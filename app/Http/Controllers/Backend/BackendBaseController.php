@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\BaseController;
 use Illuminate\Support\Arr;
 
-class FrontendBaseController extends BaseController
+class BackendBaseController extends BaseController
 {
     public function __construct()
     {
         parent::__construct();
-        $this->template = 'frontend' . $this->template;
+        $this->template = 'backend' . $this->template;
     }
 
     public function renderOutput()

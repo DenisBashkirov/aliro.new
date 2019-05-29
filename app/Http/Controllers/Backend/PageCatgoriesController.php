@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Frontend\BackendBaseController;
-use App\Page;
 use Illuminate\Http\Request;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
+use App\Http\Controllers\Controller;
 
-
-class PagesController extends BackendBaseController
+class PageCatgoriesController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +14,6 @@ class PagesController extends BackendBaseController
      */
     public function index()
     {
-        $pages = Page::all();
-        $this->vars = Arr::add($this->vars, 'pages', $pages);
-
         return $this->renderOutput();
     }
 
@@ -42,13 +35,7 @@ class PagesController extends BackendBaseController
      */
     public function store(Request $request)
     {
-        $data = $request->all();
-
-        $data['slug'] = Str::slug($data['name']);
-
-        Page::create($data);
-
-        return redirect()->route('pages.index');
+        //
     }
 
     /**

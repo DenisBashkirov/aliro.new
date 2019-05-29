@@ -12,7 +12,6 @@ use App\PvcProfileCategory;
 use App\Service;
 use App\ServiceCategory;
 use Illuminate\Http\Request;
-use App\Http\Controllers\BaseController;
 use Illuminate\Support\Arr;
 use App\Helpers\Grid as Grid;
 use Illuminate\Support\Facades\Config;
@@ -23,9 +22,6 @@ class PagesOutputController extends FrontendBaseController
 
     public function __construct()
     {
-        parent::__construct();
-        $this->template = 'frontend' . $this->template;
-
         $this->title_screen_size = 'full';
     }
 

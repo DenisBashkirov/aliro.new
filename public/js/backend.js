@@ -4,4 +4,8 @@ $(document).ready(function () {
         .popup()
     ;
 
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+
 });

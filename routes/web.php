@@ -29,19 +29,20 @@ Route::get('/style/profiles', function () {
 Auth::routes();
 
 
+Route::group(
+    ['namespace'=>'Backend', 'prefix'=>'/admin'],
+    function () {
+        Route::resource('/page_categories', 'PageCategoriesController');
+        Route::resource('/pages', 'PagesController');
+    }
+);
+
 
 Route::group(
     ['namespace'=>'Frontend'],
     function () {
         Route::get('/', 'PagesOutputController@home')->name('home');
-        Route::get('/products/{product}', 'PagesOutputController@product')->name('home');
+        Route::get('/products/{product}', 'PagesOutputController@product')->name('product');
         Route::get('/contacts', 'PagesOutputController@contacts')->name('contacts');
-    }
-);
-
-Route::group(
-    ['namespace'=>'Backend'],
-    function () {
-        Route::resource('/pages', 'PagesController');
     }
 );

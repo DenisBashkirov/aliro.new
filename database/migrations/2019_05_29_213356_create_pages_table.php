@@ -19,9 +19,9 @@ class CreatePagesTable extends Migration
                 $table->bigIncrements('id');
                 $table->string('name');
                 $table->string('slug');
-                $table->string('title');
+                $table->string('title')->nullable();
                 $table->string('h1');
-                $table->string('meta_description');
+                $table->string('meta_description')->nullable();
                 $table->bigInteger('category_id')->unsigned();
 
                 $table->foreign('category_id')->references('id')->on('pages_categories')->onDelete('restrict')->onUpdate('cascade');
