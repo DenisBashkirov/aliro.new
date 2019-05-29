@@ -29,5 +29,12 @@ Route::get('/style/profiles', function () {
 Auth::routes();
 
 
-Route::get('/', 'Frontend\PagesOutputController@home')->name('home');
-Route::get('/contacts', 'Frontend\PagesOutputController@contacts')->name('contacts');
+
+Route::group(
+    ['namespace'=>'Frontend'],
+    function () {
+        Route::get('/', 'Frontend\PagesOutputController@home')->name('home');
+        Route::get('/products/{product}', 'Frontend\PagesOutputController@product')->name('home');
+        Route::get('/contacts', 'Frontend\PagesOutputController@contacts')->name('contacts');
+    }
+);

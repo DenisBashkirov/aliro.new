@@ -49,6 +49,11 @@ class PagesOutputController extends FrontendBaseController
         return $this->renderOutput();
     }
 
+    public function product($product)
+    {
+
+    }
+
     public function contacts()
     {
         $this->title_screen_size = 'small';
