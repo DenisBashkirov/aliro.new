@@ -35,6 +35,8 @@ Route::group(
     function () {
         Route::resource('/page_categories', 'PageCategoriesController');
         Route::resource('/pages', 'PagesController');
+        Route::resource('/nav_menu_items', 'NavMenuItemsController');
+        Route::resource('/nav_dropdown_items', 'NavDropdownItemsController');
     }
 );
 
