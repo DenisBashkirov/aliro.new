@@ -22,6 +22,7 @@ class PagesOutputController extends FrontendBaseController
 
     public function __construct()
     {
+        parent::__construct();
         $this->title_screen_size = 'full';
     }
 

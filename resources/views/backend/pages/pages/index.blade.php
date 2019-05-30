@@ -4,6 +4,12 @@
 
     <div class="ui one column grid">
         <div class="column">
+            <h1 class="ui header">Страницы сайта</h1>
+        </div>
+    </div>
+
+    <div class="ui one column grid">
+        <div class="column">
             <a href="{{ route('pages.create') }}" class="ui button primary"><i class="add icon"></i>Создать</a>
         </div>
     </div>

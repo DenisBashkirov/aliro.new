@@ -11,7 +11,8 @@
             </div>
 
             <div class="ui bottom attached segment">
-                <form class="ui form large">
+                <form class="ui form large" method="POST" action="{{ route('login') }}">
+                    @csrf
 
                     <div class="field">
                         <label>Email</label>

@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Frontend\BackendBaseController;
+use App\PagesCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
-class PageCatgoriesController extends BaseController
+class PageCategoriesController extends BackendBaseController
 {
     /**
      * Display a listing of the resource.
@@ -35,7 +38,15 @@ class PageCatgoriesController extends BaseController
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+
+        $data = $request->all();
+
+        $data['slug'] = Str::slug($data['name']);
+
+        PagesCategory::create($data);
+
+        return redirect()->route('page_categories.index');
     }
 
     /**
