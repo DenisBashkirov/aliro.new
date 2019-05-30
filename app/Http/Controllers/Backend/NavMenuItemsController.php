@@ -25,7 +25,7 @@ class NavMenuItemsController extends BackendBaseController
      */
     public function index()
     {
-        $menu_items = NavMenuItem::all();
+        $menu_items = NavMenuItem::orderBy('ordering')->get();
         $this->vars = Arr::add($this->vars, 'menu_items', $menu_items);
 
         return $this->renderOutput();

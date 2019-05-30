@@ -23,6 +23,7 @@
                 <table class="ui celled striped table">
                     <thead>
                     <tr>
+                        <th>порядок</th>
                         <th>текст</th>
                         <th>страница</th>
                     </tr>
@@ -30,6 +31,7 @@
                     <tbody>
                     @foreach($menu_items as $menu_item)
                         <tr>
+                            <td>{{ $menu_item->ordering }}</td>
                             <td>
                                 <a href="{{ route('nav_menu_items.edit', $menu_item->id) }}">{{ $menu_item->text }}</a>
                             </td>

@@ -17,7 +17,7 @@
 <body>
 
 
-@include('frontend.sections.header')
+@include('frontend.sections.header_test')
 <div class="body-wrapper">
     @component('frontend.sections.title-screen', ['page'=>$page, 'title_screen_size'=>$title_screen_size]) @endcomponent
     @yield('main_content')

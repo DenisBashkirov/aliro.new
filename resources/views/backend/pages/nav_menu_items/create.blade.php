@@ -36,6 +36,13 @@
                         </div>
                     </div>
 
+                    <div class="field">
+                        <label>порядок</label>
+                        <div class="ui fluid input">
+                            <input type="number" name="ordering" placeholder="не указан">
+                        </div>
+                    </div>
+
                     <div class="ui two column middle aligned grid">
                         <div class="column">
                             <button class="ui blue button" type="submit">сохранить</button>
