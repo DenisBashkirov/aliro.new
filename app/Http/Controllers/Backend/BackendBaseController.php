@@ -8,6 +8,8 @@ use Illuminate\Support\Arr;
 
 class BackendBaseController extends BaseController
 {
+    protected $redirectTo;
+
     public function __construct()
     {
         parent::__construct();
@@ -17,5 +19,10 @@ class BackendBaseController extends BaseController
     public function renderOutput()
     {
         return parent::renderOutput();
+    }
+
+    public function redirectTo()
+    {
+        return redirect($this->redirectTo);
     }
 }

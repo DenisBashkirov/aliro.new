@@ -19,7 +19,7 @@ class CreateNavMenuItemsTable extends Migration
                 $table->bigIncrements('id');
                 $table->string('text')->unique();
                 $table->bigInteger('page_id')->unsigned()->nullable();
-                $table->bigInteger('ordering');
+                $table->bigInteger('ordering')->nullable();
 
                 $table->foreign('page_id')->references('id')->on('pages')->onDelete('restrict')->onUpdate('cascade');
             });

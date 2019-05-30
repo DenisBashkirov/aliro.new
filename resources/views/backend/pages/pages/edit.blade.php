@@ -34,9 +34,6 @@
                             <input type="text" name="h1" value="{{ $page->h1 }}">
                         </div>
                     </div>
-                </div>
-
-                <div class="ui attached segment">
 
                     <div class="ui accordion">
 

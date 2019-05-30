@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Frontend\BackendBaseController;
+use App\NavMenuItem;
+use App\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Arr;
 
-class NavMenuItemsController extends Controller
+class NavMenuItemsController extends BackendBaseController
 {
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->redirectTo = route('nav_menu_items.index');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +25,10 @@ class NavMenuItemsController extends Controller
      */
     public function index()
     {
-        //
+        $menu_items = NavMenuItem::all();
+        $this->vars = Arr::add($this->vars, 'menu_items', $menu_items);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -24,7 +38,10 @@ class NavMenuItemsController extends Controller
      */
     public function create()
     {
-        //
+        $pages = Page::all();
+        $this->vars = Arr::add($this->vars, 'pages', $pages);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -35,7 +52,9 @@ class NavMenuItemsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        NavMenuItem::create($request->all());
+
+        return $this->redirectTo();
     }
 
     /**
@@ -57,7 +76,13 @@ class NavMenuItemsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $menu_item = NavMenuItem::find($id);
+        $this->vars = Arr::add($this->vars, 'menu_item', $menu_item);
+
+        $pages = Page::all();
+        $this->vars = Arr::add($this->vars, 'pages', $pages);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -69,7 +94,10 @@ class NavMenuItemsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $menu_item = NavMenuItem::find($id);
+        $menu_item->update($request->all());
+
+        return $this->redirectTo();
     }
 
     /**
