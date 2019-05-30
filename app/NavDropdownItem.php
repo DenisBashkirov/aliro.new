@@ -18,4 +18,14 @@ class NavDropdownItem extends Model
     {
         return $this->belongsTo('App\NavDropdownItem', 'parent_id', 'id');
     }
+
+    public function menu_item()
+    {
+        return $this->belongsTo('App\NavMenuItem', 'menu_item_id', 'id');
+    }
+
+    public function page()
+    {
+        return $this->belongsTo('App\Page', 'page_id', 'id');
+    }
 }

@@ -136,11 +136,26 @@
 
                 @foreach($menu_items as $menu_item)
                     @if($menu_item->page)
-                        <a href="" class="nav__item">{{ $menu_item->text }}</a>
+                        <a href="{{ $menu_item->page->urn }}" class="nav__item">{{ $menu_item->text }}</a>
                     @else
                         <div class="nav__item">
                             <div>{{ $menu_item->text }}</div>
                             <div class="nav__item-arrow"><span class="icon-arrow"></span></div>
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-body">
+                                    <div class="nav__dropdown-back-button hidden_md js-dropdown-hide">
+                                        <span class="icon-arrow"></span>
+                                        <span>назад</span>
+                                    </div>
+                                    <div class="nav__dropdown-list">
+                                        @foreach($menu_item->dropdownItems as $dropdownItem)
+                                            @if($dropdownItem->page)
+                                                <a href="{{ $dropdownItem->page->urn }}" class="nav__dropdown-item">{{ $dropdownItem->text }}</a>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     @endif
                 @endforeach

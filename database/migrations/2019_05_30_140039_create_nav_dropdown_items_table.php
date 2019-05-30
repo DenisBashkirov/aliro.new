@@ -17,7 +17,7 @@ class CreateNavDropdownItemsTable extends Migration
         {
             Schema::create('nav_dropdown_items', function (Blueprint $table) {
                 $table->bigIncrements('id');
-                $table->string('text');
+                $table->string('text')->unique();
                 $table->bigInteger('menu_item_id')->unsigned()->nullable();
                 $table->bigInteger('parent_id')->unsigned()->nullable();
                 $table->bigInteger('page_id')->unsigned()->nullable();

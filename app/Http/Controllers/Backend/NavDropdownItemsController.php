@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Frontend\BackendBaseController;
 use App\NavDropdownItem;
+use App\NavMenuItem;
 use App\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -40,6 +41,9 @@ class NavDropdownItemsController extends BackendBaseController
     {
         $pages = Page::all();
         $this->vars = Arr::add($this->vars, 'pages', $pages);
+
+        $menu_items = NavMenuItem::all();
+        $this->vars = Arr::add($this->vars, 'menu_items', $menu_items);
 
         $dropdown_items = NavDropdownItem::orderBy('ordering')->get();
         $this->vars = Arr::add($this->vars, 'dropdown_items', $dropdown_items);
@@ -79,7 +83,19 @@ class NavDropdownItemsController extends BackendBaseController
      */
     public function edit($id)
     {
-        //
+        $dropdown_item = NavDropdownItem::find($id);
+        $this->vars = Arr::add($this->vars, 'dropdown_item', $dropdown_item);
+
+        $pages = Page::all();
+        $this->vars = Arr::add($this->vars, 'pages', $pages);
+
+        $menu_items = NavMenuItem::all();
+        $this->vars = Arr::add($this->vars, 'menu_items', $menu_items);
+
+        $dropdown_items = NavDropdownItem::orderBy('ordering')->get();
+        $this->vars = Arr::add($this->vars, 'dropdown_items', $dropdown_items);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -91,7 +107,10 @@ class NavDropdownItemsController extends BackendBaseController
      */
     public function update(Request $request, $id)
     {
-        //
+        $dropdown_item = NavDropdownItem::find($id);
+        $dropdown_item->update($request->all());
+
+        return $this->redirectTo();
     }
 
     /**
@@ -102,6 +121,8 @@ class NavDropdownItemsController extends BackendBaseController
      */
     public function destroy($id)
     {
-        //
+        NavDropdownItem::destroy($id);
+
+        return $this->redirectTo();
     }
 }

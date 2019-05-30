@@ -16,6 +16,6 @@ class NavMenuItem extends Model
 
     public function dropdownItems()
     {
-        return $this->hasOne('App\NavDropdownItem', 'menu_item_id', 'id');
+        return $this->hasMany('App\NavDropdownItem', 'menu_item_id', 'id');
     }
 }

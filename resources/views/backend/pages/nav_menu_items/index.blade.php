@@ -18,13 +18,14 @@
         <div class="ui one column grid">
             <div class="column">
 
-                <h2 class="ui header">Список страниц</h2>
+                <h2 class="ui header">Список навигации</h2>
 
                 <table class="ui celled striped table">
                     <thead>
                     <tr>
-                        <th>порядок</th>
+                        <th class="collapsing">порядок</th>
                         <th>текст</th>
+                        <th>Вложенные пунткы</th>
                         <th>страница</th>
                     </tr>
                     </thead>
@@ -34,6 +35,15 @@
                             <td>{{ $menu_item->ordering }}</td>
                             <td>
                                 <a href="{{ route('nav_menu_items.edit', $menu_item->id) }}">{{ $menu_item->text }}</a>
+                            </td>
+                            <td>
+                                <ul>
+                                    @if(count($menu_item->dropdownItems))
+                                        @foreach($menu_item->dropdownItems as $dropownItem)
+                                            <li>{{ $dropownItem->text }}</li>
+                                        @endforeach
+                                    @endif
+                                </ul>
                             </td>
                             <td>{{ $menu_item->page ? $menu_item->page->name : '-' }}</td>
                         </tr>
