@@ -17,12 +17,14 @@ class CreatePagesTable extends Migration
         {
             Schema::create('pages', function (Blueprint $table) {
                 $table->bigIncrements('id');
-                $table->string('name');
-                $table->string('slug');
+                $table->string('name')->unique();
+                $table->string('slug')->unique();
+                $table->string('urn')->unique();
                 $table->string('title')->nullable();
                 $table->string('h1');
+                $table->string('subhead')->nullable();
                 $table->string('meta_description')->nullable();
-                $table->bigInteger('category_id')->unsigned();
+                $table->bigInteger('category_id')->unsigned()->nullable();
 
                 $table->foreign('category_id')->references('id')->on('pages_categories')->onDelete('restrict')->onUpdate('cascade');
             });

@@ -9,8 +9,10 @@
                 <span class="breadcrumbs__arrow icon-arrow"></span>
                 <span class="breadcrumbs__item">Окна и двери</span>
             </div>
-            <h1 class="h1">Окна и двери от производителя в Краснодаре</h1>
-            <p class="title-screen__subtitle">Металлопластиковые и алюминиевые системы</p>
+            <h1 class="h1">{{ $page->h1 }}</h1>
+            @if($page->subhead)
+                <p class="title-screen__subtitle">{{ $page->subhead }}</p>
+            @endif
         </div>
 
     </div>

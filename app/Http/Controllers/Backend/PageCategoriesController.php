@@ -6,6 +6,7 @@ use App\Http\Controllers\Frontend\BackendBaseController;
 use App\PagesCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 class PageCategoriesController extends BackendBaseController
@@ -17,6 +18,9 @@ class PageCategoriesController extends BackendBaseController
      */
     public function index()
     {
+        $categories = PagesCategory::all();
+        $this->vars = Arr::add($this->vars, 'categories', $categories);
+
         return $this->renderOutput();
     }
 
@@ -41,8 +45,7 @@ class PageCategoriesController extends BackendBaseController
         //dd($request->all());
 
         $data = $request->all();
-
-        $data['slug'] = Str::slug($data['name']);
+        $data['slug'] = is_string($data['slug']) ? $data['slug'] :  Str::slug($data['name']);
 
         PagesCategory::create($data);
 
@@ -68,7 +71,10 @@ class PageCategoriesController extends BackendBaseController
      */
     public function edit($id)
     {
-        //
+        $category = PagesCategory::find($id);
+        $this->vars = Arr::add($this->vars, 'category', $category);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -80,7 +86,13 @@ class PageCategoriesController extends BackendBaseController
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = PagesCategory::find($id);
+
+        $data = $request->all();
+        $data['slug'] = is_string($data['slug']) ? $data['slug'] :  Str::slug($data['name']);
+        $category->update($data);
+
+        return redirect()->route('page_categories.index');
     }
 
     /**
@@ -91,6 +103,8 @@ class PageCategoriesController extends BackendBaseController
      */
     public function destroy($id)
     {
-        //
+        PagesCategory::destroy($id);
+
+        return redirect()->route('page_categories.index');
     }
 }

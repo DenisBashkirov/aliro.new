@@ -8,4 +8,8 @@ $(document).ready(function () {
         .dropdown()
     ;
 
+    $('.ui.accordion')
+        .accordion()
+    ;
+
 });

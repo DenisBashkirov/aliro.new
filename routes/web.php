@@ -42,8 +42,18 @@ Route::group(
 Route::group(
     ['namespace'=>'Frontend'],
     function () {
-        Route::get('/', 'PagesOutputController@home')->name('home');
+
+        $pages = \App\Page::all();
+
+        foreach ($pages as $page)
+        {
+            Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
+        }
+
         Route::get('/products/{product}', 'PagesOutputController@product')->name('product');
-        Route::get('/contacts', 'PagesOutputController@contacts')->name('contacts');
     }
 );
+
+Route::get('/home', function () {
+    return redirect()->route('home');
+});

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Frontend\BackendBaseController;
 use App\Page;
+use App\PagesCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -31,6 +32,9 @@ class PagesController extends BackendBaseController
      */
     public function create()
     {
+        $categories = PagesCategory::orderBy('name')->get();
+        $this->vars = Arr::add($this->vars, 'categories', $categories);
+
         return $this->renderOutput();
     }
 
@@ -43,8 +47,17 @@ class PagesController extends BackendBaseController
     public function store(Request $request)
     {
         $data = $request->all();
+        $data['slug'] = is_string($data['slug']) ? $data['slug'] :  Str::slug($data['name']);
 
-        $data['slug'] = Str::slug($data['name']);
+        if(!is_string($data['urn']))
+        {
+            $data['urn'] = '/' . $data['slug'];
+            if ($request->input('category_id'))
+            {
+                $category = PagesCategory::find($request->input('category_id'));
+                $data['urn'] = '/' . $category->slug . $data['urn'];
+            }
+        }
 
         Page::create($data);
 
@@ -70,7 +83,13 @@ class PagesController extends BackendBaseController
      */
     public function edit($id)
     {
-        //
+        $page = Page::find($id);
+        $this->vars = Arr::add($this->vars, 'page', $page);
+
+        $categories = PagesCategory::orderBy('name')->get();
+        $this->vars = Arr::add($this->vars, 'categories', $categories);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -82,7 +101,24 @@ class PagesController extends BackendBaseController
      */
     public function update(Request $request, $id)
     {
-        //
+        $page = Page::find($id);
+
+        $data = $request->all();
+        $data['slug'] = is_string($data['slug']) ? $data['slug'] :  Str::slug($data['name']);
+
+        if(!is_string($data['urn']))
+        {
+            $data['urn'] = '/' . $data['slug'];
+            if ($request->input('category_id'))
+            {
+                $category = PagesCategory::find($request->input('category_id'));
+                $data['urn'] = '/' . $category->slug . $data['urn'];
+            }
+        }
+
+        $page->update($data);
+
+        return redirect()->route('pages.index');
     }
 
     /**
@@ -93,6 +129,8 @@ class PagesController extends BackendBaseController
      */
     public function destroy($id)
     {
-        //
+        Page::destroy($id);
+
+        return redirect()->route('pages.index');
     }
 }

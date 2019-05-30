@@ -6,17 +6,18 @@
         <div class="column">
 
             <div class="ui blue inverted top attached segment">
-                <h3 class="ui header">Новая категория для страниц сайта</h3>
+                <h3 class="ui header">Редактирование категории страниц сайта</h3>
             </div>
 
-            <form class="ui form large" method="POST" action="{{ route('page_categories.store') }}">
+            <form class="ui form large" method="POST" action="{{ route('page_categories.update', $category->id) }}">
                 @csrf
+                @method('PATCH')
 
                 <div class="ui attached segment">
                     <div class="field">
                         <label>Название</label>
                         <div class="ui fluid input">
-                            <input type="text" name="name">
+                            <input type="text" name="name" value="{{ $category->name }}">
                         </div>
                     </div>
                 </div>
@@ -32,19 +33,17 @@
 
                         <div class="content">
 
-                            <div class="ui attached segment">
-                                <div class="field">
-                                    <label>slug</label>
-                                    <div class="ui fluid input">
-                                        <input type="text" name="slug" placeholder="автоматически">
-                                    </div>
+                            <div class="field">
+                                <label>slug</label>
+                                <div class="ui fluid input">
+                                    <input type="text" name="slug" placeholder="автоматически" value="{{ $category->slug }}">
                                 </div>
+                            </div>
 
-                                <div class="field">
-                                    <label>Комментарий</label>
-                                    <div class="ui fluid input">
-                                        <input type="text" name="comment">
-                                    </div>
+                            <div class="field">
+                                <label>Комментарий</label>
+                                <div class="ui fluid input">
+                                    <input type="text" name="comment" value="{{ $category->comment }}">
                                 </div>
                             </div>
 
@@ -59,6 +58,9 @@
                         <div class="column">
                             <button class="ui blue button" type="submit">сохранить</button>
                             <a href="{{ url()->previous() }}" class="ui button">Отмена</a>
+                        </div>
+                        <div class="column right aligned">
+                            <a href="{{ route('page_categories.destroy', $category->id) }}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Точно удалить?"><i class="trash icon red"></i></a>
                         </div>
                     </div>
                 </div>

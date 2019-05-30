@@ -25,8 +25,10 @@
                         <tr>
                             <th>Название</th>
                             <th>slug</th>
+                            <th>urn</th>
                             <th>title</th>
-                            <th>h1</th>
+                            <th>H1</th>
+                            <th>H1</th>
                             <th>meta_description</th>
                             <th>Категория</th>
                         </tr>
@@ -35,11 +37,13 @@
                         @foreach($pages as $page)
                             <tr>
                                 <td>
-                                    <a href="{{ route('pages.show', $page->id) }}">{{ $page->name }}</a>
+                                    <a href="{{ route('pages.edit', $page->id) }}">{{ $page->name }}</a>
                                 </td>
                                 <td>{{ $page->slug }}</td>
+                                <td>{{ $page->urn }}</td>
                                 <td>{{ $page->title }}</td>
                                 <td>{{ $page->h1 }}</td>
+                                <td>{{ $page->subhead }}</td>
                                 <td>{{ strlen($page->meta_description) }}</td>
                                 <td>
                                     @if($page->category)
