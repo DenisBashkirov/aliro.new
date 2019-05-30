@@ -6,12 +6,12 @@
         <div class="column">
 
             <div class="ui blue inverted top attached segment">
-                <h3 class="ui header">Новый пункт навигационного меню</h3>
+                <h3 class="ui header">Новый пункт выпадающего навигационного меню</h3>
             </div>
 
             <div class="ui attached segment">
 
-                <form class="ui form large" method="POST" action="{{ route('nav_menu_items.store') }}">
+                <form class="ui form large" method="POST" action="{{ route('nav_dropdown_items.store') }}">
                     @csrf
 
                     <div class="field">
@@ -31,6 +31,23 @@
                                 <div class="item" data-value="">Без страницы</div>
                                 @foreach($pages as $page)
                                     <div class="item" data-value="{{ $page->id }}">{{ $page->name }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>родительский пункт</label>
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="parent_id">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Без родителя</div>
+                            <div class="menu">
+                                <div class="item" data-value="">Без родителя</div>
+                                @foreach($dropdown_items as $dropdown_item)
+                                    @if(!count($dropdown_item->children))
+                                        <div class="item" data-value="{{ $dropdown_item->id }}">{{ $dropdown_item->text }}</div>
+                                    @endif
                                 @endforeach
                             </div>
                         </div>

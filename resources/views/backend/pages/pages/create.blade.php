@@ -33,6 +33,9 @@
                             <input type="text" name="h1">
                         </div>
                     </div>
+                </div>
+
+                <div class="ui attached segment">
 
                     <div class="ui accordion">
                         <div class="title">
@@ -62,7 +65,7 @@
                                     <i class="dropdown icon"></i>
                                     <div class="default text">Без категории</div>
                                     <div class="menu">
-                                        <div class="item" data-value="">Без категории</div>
+                                        <div class="item" data-value="null">Без категории</div>
                                         @foreach($categories as $category)
                                             <div class="item" data-value="{{ $category->id }}">{{ $category->name }}</div>
                                         @endforeach
@@ -84,8 +87,7 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
+                        </div>
 
                 </div>
 

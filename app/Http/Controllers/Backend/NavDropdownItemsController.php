@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Frontend\BackendBaseController;
+use App\NavDropdownItem;
+use App\Page;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Arr;
 
-class NavDropdownItemsController extends Controller
+class NavDropdownItemsController extends BackendBaseController
 {
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->redirectTo = route('nav_dropdown_items.index');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +25,10 @@ class NavDropdownItemsController extends Controller
      */
     public function index()
     {
-        //
+        $nav_dropdown_items = NavDropdownItem::orderBy('ordering')->get();
+        $this->vars = Arr::add($this->vars, 'nav_dropdown_items', $nav_dropdown_items);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -24,7 +38,13 @@ class NavDropdownItemsController extends Controller
      */
     public function create()
     {
-        //
+        $pages = Page::all();
+        $this->vars = Arr::add($this->vars, 'pages', $pages);
+
+        $dropdown_items = NavDropdownItem::orderBy('ordering')->get();
+        $this->vars = Arr::add($this->vars, 'dropdown_items', $dropdown_items);
+
+        return $this->renderOutput();
     }
 
     /**
@@ -35,7 +55,9 @@ class NavDropdownItemsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        NavDropdownItem::create($request->all());
+
+        return $this->redirectTo();
     }
 
     /**
