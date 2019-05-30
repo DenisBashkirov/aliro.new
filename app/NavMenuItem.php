@@ -13,4 +13,9 @@ class NavMenuItem extends Model
     {
         return $this->belongsTo('App\Page', 'page_id', 'id');
     }
+
+    public function dropdownItems()
+    {
+        return $this->hasOne('App\NavDropdownItem', 'menu_item_id', 'id');
+    }
 }
