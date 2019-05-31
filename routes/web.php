@@ -49,10 +49,15 @@ Route::group(
 
         foreach ($pages as $page)
         {
-            Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
+            if ($page->category)
+                Route::get($page->category->slug . '/{page_slug}', 'PagesOutputController@' . $page->category->slug)->name($page->category->slug);
+            else
+                Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
+
+            //Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
         }
 
-        Route::get('/products/{product}', 'PagesOutputController@product')->name('product');
+        //Route::get('/products/{product}', 'PagesOutputController@product')->name('product');
     }
 );
 

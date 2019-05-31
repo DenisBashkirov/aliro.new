@@ -1,0 +1,17 @@
+.footer {
+  background: #494949;
+  color: #fff;
+  padding: 50px 0;
+}
+
+@media (min-width:768px) {
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .footer {
+    padding: 80px 0;
+  }
+}

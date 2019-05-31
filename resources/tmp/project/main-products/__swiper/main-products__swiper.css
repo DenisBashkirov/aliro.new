@@ -1,0 +1,15 @@
+.main-products__swiper {
+  padding-bottom: 15px;
+}
+
+@media (min-width:768px) {
+  .main-products__swiper {
+    display: block!important;
+  }
+}
+
+@media (min-width:1200px) {
+  .main-products__swiper {
+    padding-bottom: 0;
+  }
+}

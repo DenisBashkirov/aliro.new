@@ -1,0 +1,12 @@
+@media (min-width:768px) {
+  .product-section__specifics {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .product-section__specifics {
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,6 @@
+@media (max-width:767px) {
+  .profile-preview-card__properties {
+    width: 100vw;
+    margin-left: calc((100vw - 100%)/ -2);
+  }
+}

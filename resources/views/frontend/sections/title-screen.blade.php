@@ -1,4 +1,4 @@
-<div class="title-screen title-screen_{{ $title_screen_size }}" style="background: url({{ asset('img/sections/title-screen/home_xl.jpg') }}">
+<div class="title-screen title-screen_{{ $title_screen_size }}" style="background: url({{ asset('img/sections/title-screen/' . $page->slug . '.jpg') }}">
     <div class="title-screen__container title-screen__container_{{ $title_screen_size }} container">
 
         <div class="title-screen__page-title">

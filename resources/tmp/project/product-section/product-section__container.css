@@ -1,0 +1,10 @@
+.product-section__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:768px) {
+  .product-section__container {
+    flex-direction: row;
+  }
+}

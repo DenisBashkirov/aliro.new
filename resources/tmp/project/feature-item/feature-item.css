@@ -1,0 +1,14 @@
+@media (max-width:767px) {
+  .feature-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feature-item>* {
+    margin-right: 15px;
+  }
+
+  .feature-item>:nth-child(2n) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.article-preview-card__description {
+  font-family: Montserrat-Regular;
+  font-size: 1.4rem;
+  line-height: 125%;
+}
+
+@media (min-width:768px) {
+  .article-preview-card__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:992px) {
+  .article-preview-card__description {
+    font-size: 1.8rem;
+  }
+}

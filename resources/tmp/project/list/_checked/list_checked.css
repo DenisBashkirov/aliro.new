@@ -1,0 +1,17 @@
+.list_checked {
+  margin-left: 1.5em;
+}
+
+.list_checked li {
+  position: relative;
+}
+
+.list_checked li:before {
+  content: '';
+  height: 1em;
+  width: 1em;
+  display: block;
+  background: url(/public/svg/lists/checked-red.svg) right center no-repeat;
+  position: absolute;
+  left: -1.5em;
+}

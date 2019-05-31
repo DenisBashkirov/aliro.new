@@ -1,0 +1,5 @@
+@media (max-width:767px) {
+  .nav__dropdown_visible {
+    left: 0;
+  }
+}

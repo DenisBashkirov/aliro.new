@@ -1,0 +1,14 @@
+@media (max-width:767px) {
+  .header__menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: calc(100vh - 54px);
+    color: #fff;
+    background: #d52e43;
+    background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
+    right: -100vw;
+    transition: all .2s;
+  }
+}

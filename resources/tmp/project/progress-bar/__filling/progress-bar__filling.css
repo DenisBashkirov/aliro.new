@@ -1,0 +1,8 @@
+.progress-bar__filling {
+  background: #d52e43;
+  background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}

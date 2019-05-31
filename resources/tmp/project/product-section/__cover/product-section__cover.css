@@ -1,0 +1,22 @@
+@media (min-width:768px) {
+  .product-section__cover {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width:991px) {
+  .product-section__cover {
+    order: -1;
+  }
+}
+
+@media (max-width:767px) {
+  .product-section__cover {
+    width: 100vw;
+    margin-left: calc((100vw - 100%)/ -2);
+  }
+}

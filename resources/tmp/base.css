@@ -126,7 +126,36 @@ table {
   border-spacing: 0;
 }
 
-body,
 html {
-  min-height: 100vh;
+  font-family: Montserrat-Light!important;
+  font-size: 62.5%;
+  color: #1f1f1f;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.8rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body,
+input {
+  color: #1f1f1f;
+}
+
+p {
+  line-height: 150%;
+}
+
+b {
+  font-weight: bolder;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
 }

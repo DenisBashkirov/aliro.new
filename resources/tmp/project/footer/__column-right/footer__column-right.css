@@ -1,0 +1,21 @@
+.footer__column-right {
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .footer__column-right {
+    border-top: none;
+  }
+}
+
+@media (min-width:992px) {
+  .footer__column-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}

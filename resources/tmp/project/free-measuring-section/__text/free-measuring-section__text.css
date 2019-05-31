@@ -1,0 +1,19 @@
+.free-measuring-section__text {
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width:768px) {
+  .free-measuring-section__text {
+    width: 660px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width:1200px) {
+  .free-measuring-section__text {
+    width: 770px;
+    padding-bottom: 45px;
+  }
+}

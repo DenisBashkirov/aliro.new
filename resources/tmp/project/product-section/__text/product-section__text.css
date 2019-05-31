@@ -1,0 +1,14 @@
+.product-section__text {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.product-section__text p {
+  line-height: 130%;
+}
+
+@media (min-width:768px) {
+  .product-section__text {
+    font-size: 1.8rem;
+  }
+}

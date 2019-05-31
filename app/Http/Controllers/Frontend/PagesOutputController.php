@@ -58,9 +58,11 @@ class PagesOutputController extends FrontendBaseController
         return $this->renderOutput();
     }
 
-    public function product($product)
+    public function products($page_slug)
     {
+        $this->page = Page::where('slug', $page_slug)->first();
 
+        return $this->renderOutput();
     }
 
     public function contacts()

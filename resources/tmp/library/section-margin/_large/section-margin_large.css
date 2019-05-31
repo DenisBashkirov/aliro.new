@@ -1,0 +1,15 @@
+.section-margin_large {
+  margin-top: 80px;
+}
+
+@media (min-width:768px) {
+  .section-margin_large {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width:1200px) {
+  .section-margin_large {
+    margin-top: 150px;
+  }
+}

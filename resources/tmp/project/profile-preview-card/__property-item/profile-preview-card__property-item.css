@@ -1,0 +1,31 @@
+.profile-preview-card__property-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (min-width:768px) {
+  .profile-preview-card__property-item {
+    min-width: 162px;
+    max-width: 270px;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width:1200px) {
+  .profile-preview-card__property-item {
+    min-width: 270px;
+  }
+}
+
+@media (max-width:767px) {
+  .profile-preview-card__property-item {
+    width: auto;
+    min-width: 160px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 3px;
+  }
+}

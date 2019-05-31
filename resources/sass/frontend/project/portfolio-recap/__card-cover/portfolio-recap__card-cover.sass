@@ -1,6 +1,8 @@
 @import "../../../bootstrap"
 
 .portfolio-recap__card-cover
-  display: flex
-  align-items: center
-  justify-content: center
+
+  @supports (display: grid) // почему-то IE криво отрабатывает это правило
+    display: flex
+    align-items: center
+    justify-content: center

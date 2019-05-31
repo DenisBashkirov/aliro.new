@@ -1,0 +1,27 @@
+.title-screen__subtitle {
+  font-family: Montserrat-Regular;
+  font-size: 2rem;
+  color: #df2647;
+  line-height: 100%;
+  margin-top: 5px;
+}
+
+@supports (display:grid) {
+  .title-screen__subtitle {
+    background: linear-gradient(168.94deg,#ff2e2e 0,#d52e43 80.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width:992px) {
+  .title-screen__subtitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .title-screen__subtitle {
+    font-size: 2.8rem;
+  }
+}

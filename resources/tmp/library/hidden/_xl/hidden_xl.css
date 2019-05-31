@@ -1,0 +1,5 @@
+@media (min-width:1200px) {
+  .hidden_xl {
+    display: none!important;
+  }
+}

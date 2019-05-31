@@ -171,6 +171,33 @@ $(document).ready(function () {
         })
     }
 
+    /*
+    SWIPER - product-section__specifics-swiper
+     */
+    if (viewportSmallerMd)
+    {
+        var productSectionSpecificsSwiper = new Swiper ('.product-section__specifics-swiper', {
+            loop: false,
+            slidesPerView: 1,
+            breakpointsInverse: true,
+            slidesPerColumn: 2,
+            slideClass: 'product-section__specific-item',
+            freeMode: false,
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.5,
+            freeModeMomentumVelocityRatio: 0.5,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
+            }
+        })
+    }
+
 
     /*
     NAV DROPDOWNS

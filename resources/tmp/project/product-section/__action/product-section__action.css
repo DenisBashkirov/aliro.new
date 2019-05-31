@@ -1,0 +1,9 @@
+.product-section__action {
+  margin-top: 20px;
+}
+
+@media (min-width:768px) {
+  .product-section__action {
+    margin-top: 40px;
+  }
+}
