@@ -28,6 +28,10 @@
   }
 }
 
+.link_arrowed:hover {
+  text-decoration: none!important;
+}
+
 .link_arrowed:hover .icon-arrow {
   left: .5em;
 }

@@ -1,9 +1,13 @@
 @import "../../../../bootstrap"
 
 .title-screen__container_small
-  min-height: 250px
-
-
+  min-height: 180px
+  margin-top: $header-height_sm
 
   & .title-screen__page-title
     border: none
+
+
+  @media ($brpt_md)
+    min-height: 250px
+    margin-top: $header-height_md

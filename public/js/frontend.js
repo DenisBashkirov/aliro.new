@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    var viewpoerSm;
+    var viewportMd;
+    var viewportLg;
+    var viewportXl;
+
     var viewportBiggerXl = false;
     var viewportBiggerLg = false;
     var viewportBiggerMd = false;
@@ -16,6 +21,18 @@ $(document).ready(function () {
     var sm = '600';
 
     var viewportWidth = $(window).width()
+
+    if (viewportWidth < md)
+        viewpoerSm = true;
+
+    if (viewportWidth >= md && viewportWidth < lg)
+        viewportMd = true;
+
+    if (viewportWidth >= lg && viewportWidth < xl)
+        viewportXl = true;
+
+    if (viewportWidth >= xl)
+        viewportLg = true;
 
     if (viewportWidth >= 1200)
         viewportBiggerXl = true;
@@ -197,6 +214,50 @@ $(document).ready(function () {
             }
         })
     }
+
+    /*
+    SWIPER - contacts-department__staff-swiper-container
+    */
+        var contactsDepartmentStaffSwiper = new Swiper ('.contacts-department__staff-swiper-container', {
+            loop: false,
+            slidesPerView: 'auto',
+            breakpointsInverse: true,
+            spaceBetween: 10,
+            centeredSlides: true,
+            centerInsufficientSlides: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false
+            },
+            breakpoints: {
+                768: {
+
+                    centeredSlides: false,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+        for (var i = 0; i < contactsDepartmentStaffSwiper.length; i++)
+        {
+            var swiper = contactsDepartmentStaffSwiper[i];
+            var slides = swiper.slides;
+            
+            if (slides.length <= 4 && viewportXl)
+            {
+                contactsDepartmentStaffSwiper[i].destroy(false, false);
+            }
+            if (slides.length <= 3 && viewportLg)
+            {
+                contactsDepartmentStaffSwiper[i].destroy(false, false);
+            }
+            if (slides.length <= 2 && viewportMd)
+            {
+                contactsDepartmentStaffSwiper[i].destroy(false, false);
+            }
+        }
+
+
 
 
     /*

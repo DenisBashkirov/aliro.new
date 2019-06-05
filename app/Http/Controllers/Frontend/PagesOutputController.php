@@ -23,6 +23,7 @@ class PagesOutputController extends FrontendBaseController
     protected $urn;
     protected $page;
 
+
     public function __construct()
     {
         parent::__construct();
@@ -35,6 +36,7 @@ class PagesOutputController extends FrontendBaseController
         else
             $this->page = Page::where('urn', '/')->first();
     }
+
 
     public function renderOutput()
     {
@@ -58,12 +60,26 @@ class PagesOutputController extends FrontendBaseController
         return $this->renderOutput();
     }
 
+
     public function products($page_slug)
     {
+        $this->template .= '.layouts.' . $page_slug;
+
         $this->page = Page::where('slug', $page_slug)->first();
 
         return $this->renderOutput();
     }
+
+
+    public function company($page_slug)
+    {
+        $this->template .= '.layouts.' . $page_slug;
+
+        $this->page = Page::where('slug', $page_slug)->first();
+
+        return $this->renderOutput();
+    }
+
 
     public function contacts()
     {
@@ -71,6 +87,7 @@ class PagesOutputController extends FrontendBaseController
 
         return $this->renderOutput();
     }
+
 
     public function feedback()
     {

@@ -1,0 +1,27 @@
+<div class="employee-card swiper-slide">
+
+    <div class="employee-card__photo">
+        <img src="{{ asset('img/contacts/employee-placeholder.jpg') }}" alt="">
+    </div>
+
+    <div class="employee-card__body">
+
+        <p class="employee-card__name h3_mini font-weight_medium">{{ $name }}</p>
+
+        <div class="employee-card__contact-details contact-details">
+            @if(isset($position))
+                <p class="employee-card__position">{{ $position }}</p>
+            @endif
+            <a href="tel:{{ $phone }}" class="employee-card__phone text-iconed link">
+                <span class="icon-phone"></span>
+                <span>{{ $phone }}</span>
+            </a>
+            <a href="mailto:{{ $email }}" class="employee-card__email text-iconed link">
+                <span class="icon-email"></span>
+                <span>{{ $email }}</span>
+            </a>
+        </div>
+
+    </div>
+
+</div>

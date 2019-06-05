@@ -1,0 +1,15 @@
+.text-iconed {
+  display: inline-flex;
+}
+
+.text-iconed>:first-child {
+  margin-right: .4em;
+}
+
+a.text-iconed:hover {
+  text-decoration: none;
+}
+
+a.text-iconed:hover :not([class^=icon-]) {
+  text-decoration: underline;
+}

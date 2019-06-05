@@ -362,10 +362,10 @@
 
 // Выстраивает все прямые дочерние элементы в колонку
 // $row-gap - отступ между рядами
-@mixin flex-column($row-gap: $grid-row-gap)
+@mixin flex-column($row-gap: $grid-row-gap, $display: flex)
 
   @if $row-gap != 0
-    display: flex
+    display: $display
     flex-direction: column
     //margin-top: -#{$row-gap}
 
@@ -379,6 +379,17 @@
 
     > *
       margin-top: initial
+
+
+// Выстраивает все прямые дочерние элементы в колонку
+// $row-gap - отступ между рядами
+@mixin column($row-gap: $grid-row-gap, $display: block)
+
+  display: $display
+
+  > *:not(:first-child)
+    margin-top: #{$row-gap}
+
 
 
 // Устанавливает колонку, в которую надо разместить элемент grid-сетки
@@ -438,3 +449,23 @@
   @each $size_name in (mini, tiny, small, medium, big, large, massive)
     .text_#{$size_name}
       font-size: calc(#{$font-size} * #{$ratio})
+
+
+
+@mixin h3_mini()
+  font-size: 1.7rem
+
+  @media ($brpt_lg)
+    font-size: 1.8rem
+
+  @media ($brpt_xl)
+    font-size: 2.1rem
+
+@mixin h3_tiny()
+  font-size: 1.9rem
+
+  @media ($brpt_lg)
+    font-size: 2.1rem
+
+  @media ($brpt_xl)
+    font-size: 2.5rem

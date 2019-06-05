@@ -1,0 +1,30 @@
+.contacts-division {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-division>:not(:first-child) {
+  margin-top: 40px;
+}
+
+@media (min-width:768px) {
+  .contacts-division {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-division>:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width:992px) {
+  .contacts-division {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-division>:not(:first-child) {
+    margin-top: 70px;
+  }
+}

@@ -14,11 +14,13 @@
 
     @include('frontend.sources.styles')
 
+    @yield('page_head')
+
 </head>
 <body>
 
 
-@include('frontend.sections.header_test')
+@include('frontend.sections.header')
 <div class="body-wrapper">
     @component('frontend.sections.title-screen', ['page'=>$page, 'title_screen_size'=>$title_screen_size]) @endcomponent
     @yield('main_content')
@@ -28,6 +30,7 @@
 
 
 @include('frontend.sources.scripts')
+@yield('page_scripts')
 
 </body>
 </html>

@@ -2,6 +2,9 @@
 
 @section('main_content')
 
-    @include('frontend.pages.products.product-section_default')
+    @yield('products_content')
+
+    @include('frontend.sections.free-measuring-form')
+    @include('frontend.sections.portfolio-recap')
 
 @endsection

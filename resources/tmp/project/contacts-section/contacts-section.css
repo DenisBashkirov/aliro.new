@@ -1,0 +1,9 @@
+.contacts-section {
+  margin-top: 80px;
+}
+
+@media (min-width:768px) {
+  .contacts-section {
+    margin-top: 100px;
+  }
+}

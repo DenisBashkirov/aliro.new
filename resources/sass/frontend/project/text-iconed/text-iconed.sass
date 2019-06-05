@@ -1,0 +1,17 @@
+@import "../../bootstrap"
+
+.text-iconed
+  display: inline-flex
+
+
+  & > *:first-child
+    margin-right: .4em
+
+
+a.text-iconed
+
+  &:hover
+    text-decoration: none
+
+    *:not([class^="icon-"])
+      text-decoration: underline

@@ -2,4 +2,10 @@
 a.link {
   font-family: Montserrat-Regular;
   color: #df2647;
+  text-decoration: none;
+}
+
+.link:hover,
+a.link:hover {
+  text-decoration: underline;
 }

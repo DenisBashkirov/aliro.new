@@ -24,7 +24,7 @@
                 <div class="footer__section">
                     <p class="footer__section-heading">Завод "Индустрия окон"</p>
                     <p class="footer__section-text">п. Яблоновский, Шапсугское шоссе, 3/15</p>
-                    <a href="#" class="footer__section-link">все контакты</a>
+                    <a href="{{ route('contacts') }}" class="footer__section-link">все контакты</a>
                 </div>
             </div>
 

@@ -1,0 +1,8 @@
+.employee-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card__body>:not(:first-child) {
+  margin-top: 10px;
+}

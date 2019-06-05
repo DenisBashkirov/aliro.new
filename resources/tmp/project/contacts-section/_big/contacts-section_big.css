@@ -1,0 +1,19 @@
+.contacts-section_big {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-section_big>:not(:first-child) {
+  margin-top: 80px;
+}
+
+@media (min-width:768px) {
+  .contacts-section_big {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-section_big>:not(:first-child) {
+    margin-top: 100px;
+  }
+}

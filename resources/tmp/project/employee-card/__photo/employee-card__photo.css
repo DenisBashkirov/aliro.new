@@ -1,0 +1,24 @@
+.employee-card__photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.employee-card__photo img {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .employee-card__photo {
+    height: 300px;
+  }
+}
+
+@media (min-width:1200px) {
+  .employee-card__photo {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}

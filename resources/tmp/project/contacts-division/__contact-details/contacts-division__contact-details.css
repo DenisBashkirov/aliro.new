@@ -1,0 +1,21 @@
+.contacts-division__contact-details {
+  margin-bottom: 15px;
+}
+
+@media (min-width:768px) {
+  .contacts-division__contact-details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:767px) {
+  .contacts-division__contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-division__contact-details>:not(:first-child) {
+    margin-top: 15px;
+  }
+}

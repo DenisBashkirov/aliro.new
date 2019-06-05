@@ -1,0 +1,14 @@
+.employee-card {
+  width: 85vw;
+  display: block;
+}
+
+.employee-card>:not(:first-child) {
+  margin-top: 15px;
+}
+
+@media (min-width:768px) {
+  .employee-card {
+    width: 270px;
+  }
+}

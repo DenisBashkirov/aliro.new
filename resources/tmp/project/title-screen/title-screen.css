@@ -1,0 +1,17 @@
+.title-screen {
+  margin-bottom: 80px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width:768px) {
+  .title-screen {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width:1200px) {
+  .title-screen {
+    margin-bottom: 120px;
+  }
+}

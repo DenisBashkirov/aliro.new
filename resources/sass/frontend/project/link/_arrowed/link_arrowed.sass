@@ -1,14 +1,14 @@
 @import "../../../bootstrap"
 
 .link_arrowed
-  //display: inline-flex
-  //align-items: center
   @include row-generate-auto(auto auto, .55em, column, inline)
   text-decoration: none
   transition: all $duration_slow ease
 
 
   &:hover
+    text-decoration: none !important
+
     .icon-arrow
       left: .5em
 

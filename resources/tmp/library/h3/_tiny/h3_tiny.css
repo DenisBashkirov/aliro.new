@@ -1,0 +1,15 @@
+.h3_tiny {
+  font-size: 1.9rem;
+}
+
+@media (min-width:992px) {
+  .h3_tiny {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .h3_tiny {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+.contacts-department_staffed {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-department_staffed>:not(:first-child) {
+  margin-top: 30px;
+}
+
+.contacts-department_staffed .contacts-department__title {
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+@media (min-width:992px) {
+  .contacts-department_staffed .contacts-department__title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .contacts-department_staffed .contacts-department__title {
+    font-size: 2.5rem;
+  }
+}
