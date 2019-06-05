@@ -1,0 +1,3 @@
+.elem-dealing>* {
+  flex-shrink: 0;
+}

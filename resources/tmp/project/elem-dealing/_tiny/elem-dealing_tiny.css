@@ -1,0 +1,8 @@
+.elem-dealing_tiny {
+  display: flex;
+  flex-direction: column;
+}
+
+.elem-dealing_tiny>:not(:first-child) {
+  margin-top: 30px;
+}

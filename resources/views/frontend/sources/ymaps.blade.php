@@ -16,7 +16,7 @@
         });
 
         ymapRetail.geoObjects.add(new ymaps.Placemark([45.042158, 38.941447], {
-            balloonContent: 'цвет <strong>красный</strong>',
+            //balloonContent: 'цвет <strong>красный</strong>',
             iconCaption: 'Салон окон "Алиро"'
         }, {
             preset: 'islands#redDotIcon'
@@ -36,7 +36,7 @@
         });
 
         ymapProduction.geoObjects.add(new ymaps.Placemark([44.982987, 38.890090], {
-            balloonContent: 'цвет <strong>красный</strong>',
+            //balloonContent: 'цвет <strong>красный</strong>',
             iconCaption: 'завод "Индустрия Окон"'
         }, {
             preset: 'islands#redDotIcon'

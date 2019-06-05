@@ -1,7 +1,6 @@
 .rubrics-about__card {
   overflow: hidden;
   border-radius: 3px;
-  min-width: 75vw;
   max-width: calc(100vw - 30px);
   height: 100%;
   box-sizing: border-box;
@@ -11,7 +10,6 @@
 @media (min-width:768px) {
   .rubrics-about__card {
     min-width: auto;
-    width: 570px;
     padding: 15px;
   }
 }

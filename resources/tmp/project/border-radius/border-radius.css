@@ -1,0 +1,25 @@
+.border-radius {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .md-border-radius {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:992px) {
+  .lg-border-radius {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:1200px) {
+  .xl-border-radius {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}

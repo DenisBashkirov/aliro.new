@@ -1,0 +1,32 @@
+@media (min-width:768px) {
+  .elem-dealing_large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem-dealing_large>:not(:first-child) {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width:1200px) {
+  .elem-dealing_large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem-dealing_large>:not(:first-child) {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width:767px) {
+  .elem-dealing_large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem-dealing_large>:not(:first-child) {
+    margin-top: 60px;
+  }
+}

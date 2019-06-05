@@ -1,8 +1,8 @@
 <section class="rubrics-about section-margin_large">
     <div class="rubrics-about__container">
 
-        <div class="rubrics-about__swiper-container swiper-container">
-            <div class="rubrics-about__swiper-wrapper swiper-wrapper">
+        <div class="swiper-container js-swiper" data-swiper-destroy="lg">
+            <div class="lg-grid-cols-2 swiper-wrapper">
 
                 <div class="rubrics-about__card swiper-slide">
                     <div class="rubrics-about__card-cover">
@@ -85,7 +85,7 @@
                 </div>
 
             </div>
-            <div class="swiper-scrollbar hidden_xl"></div>
+            <div class="swiper-scrollbar hidden_lg"></div>
         </div>
 
     </div>

@@ -1,0 +1,8 @@
+.ele-dealing_mini {
+  display: flex;
+  flex-direction: column;
+}
+
+.ele-dealing_mini>:not(:first-child) {
+  margin-top: 15px;
+}

@@ -7,7 +7,7 @@
   display: inline-block;
   box-sizing: border-box;
   width: auto!important;
-  height: 100%!important;
+  height: auto!important;
 }
 
 .main-products__category-card:after,
@@ -51,6 +51,12 @@
   .main-products__category-card {
     min-width: 370px;
   }
+
+@supports (display:grid) {
+    .main-products__category-card {
+      height: 100%!important;
+    }
+}
 }
 
 @media (max-width:767px) {

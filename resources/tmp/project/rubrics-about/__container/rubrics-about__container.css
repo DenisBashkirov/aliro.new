@@ -1,5 +1,4 @@
 .rubrics-about__container {
-  display: flex;
   width: 100vw;
   margin-left: calc((100vw - 100%)/ -2);
 }

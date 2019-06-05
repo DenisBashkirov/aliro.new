@@ -15,7 +15,7 @@
         });
 
         ymapProduction.geoObjects.add(new ymaps.Placemark([44.982987, 38.890090], {
-            balloonContent: 'цвет <strong>красный</strong>',
+            //balloonContent: 'цвет <strong>красный</strong>',
             iconCaption: 'завод "Индустрия Окон"'
         }, {
             preset: 'islands#redDotIcon'

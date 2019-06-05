@@ -218,44 +218,128 @@ $(document).ready(function () {
     /*
     SWIPER - contacts-department__staff-swiper-container
     */
-        var contactsDepartmentStaffSwiper = new Swiper ('.contacts-department__staff-swiper-container', {
-            loop: false,
-            slidesPerView: 'auto',
-            breakpointsInverse: true,
-            spaceBetween: 10,
-            centeredSlides: true,
-            centerInsufficientSlides: true,
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                hide: false
-            },
-            breakpoints: {
-                768: {
+    var contactsDepartmentStaffSwiper = new Swiper ('.contacts-department__staff-swiper-container', {
+        loop: false,
+        slidesPerView: 'auto',
+        breakpointsInverse: true,
+        spaceBetween: 10,
+        centeredSlides: true,
+        centerInsufficientSlides: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false
+        },
+        breakpoints: {
+            768: {
 
-                    centeredSlides: false,
-                    spaceBetween: 30
-                }
-            }
-        });
-
-        for (var i = 0; i < contactsDepartmentStaffSwiper.length; i++)
-        {
-            var swiper = contactsDepartmentStaffSwiper[i];
-            var slides = swiper.slides;
-            
-            if (slides.length <= 4 && viewportXl)
-            {
-                contactsDepartmentStaffSwiper[i].destroy(false, false);
-            }
-            if (slides.length <= 3 && viewportLg)
-            {
-                contactsDepartmentStaffSwiper[i].destroy(false, false);
-            }
-            if (slides.length <= 2 && viewportMd)
-            {
-                contactsDepartmentStaffSwiper[i].destroy(false, false);
+                centeredSlides: false,
+                spaceBetween: 30
             }
         }
+    });
+
+    for (var i = 0; i < contactsDepartmentStaffSwiper.length; i++)
+    {
+        var swiper = contactsDepartmentStaffSwiper[i];
+        var slides = swiper.slides;
+
+        if (slides.length <= 4 && viewportXl)
+        {
+            swiper.destroy(false, false);
+        }
+        if (slides.length <= 3 && viewportLg)
+        {
+            swiper.destroy(false, false);
+        }
+        if (slides.length <= 2 && viewportMd)
+        {
+            swiper.destroy(false, false);
+        }
+    }
+
+
+    /*
+    SWIPER - contacts-department__staff-swiper-container
+    */
+    var swipers = new Swiper ('.js-swiper', {
+        init: false,
+        loop: false,
+        slidesPerView: 'auto',
+        breakpointsInverse: true,
+        spaceBetween: 10,
+        slidesOffsetBefore: 15,
+        slidesOffsetAfter: 15,
+        centerInsufficientSlides: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false
+        },
+        breakpoints: {
+            md: {
+                slidesOffsetBefore: 0,
+                slidesOffsetAfter: 0,
+                centeredSlides: false,
+                spaceBetween: 30
+            }
+        }
+    });
+
+
+    function swiperHandleBrpt(swipers) {
+
+    }
+
+
+    var amountOfSwipers;
+    if(swipers.length)
+        amountOfSwipers = swipers.length;
+    else
+        amountOfSwipers = 1;
+
+
+    if (amountOfSwipers > 1)
+    {
+        for (var i=0; i < swipers.length; i++)
+        {
+
+            if (swipers[i].$el.attr('data-swiper-destroy'))
+            {
+                var swiperBrpt = swipers[i].$el.attr('data-swiper-destroy');
+
+                if (!swiperBrpt)
+                {
+                    swipers[i].init();
+                }
+
+                if (viewportWidth < eval(swiperBrpt))
+                {
+                    swipers[i].init();
+                    //swipers[i].$el.css('overflow', 'hidden');
+                }
+            }
+            else
+            {
+                swipers[i].init();
+                swipers[i].$el.css('overflow', 'hidden');
+            }
+        }
+    }
+    else
+    {
+        if(swipers.$el)
+        {
+            var swiperBrpt = swipers.$el.attr('data-swiper-destroy');
+
+            console.log(swiperBrpt);
+
+            if (viewportWidth < eval(swiperBrpt))
+            {
+                swipers.init();
+                //swipers.$el.css('overflow', 'hidden');
+            }
+        }
+    }
+
 
 
 

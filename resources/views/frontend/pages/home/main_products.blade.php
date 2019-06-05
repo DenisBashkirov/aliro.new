@@ -1,5 +1,5 @@
 <section class="main-products section-margin_large">
-    <div class="container distribute-items_large">
+    <div class="container elem-dealing elem-dealing_medium">
 
         <div class="section__header align-center font-weight_extrabold">
             <h2 class="h2_medium">Основная продукция компании</h2>
@@ -7,8 +7,8 @@
 
         <div class="main-products__categories">
 
-            <div class="main-products__swiper swiper-container">
-                <div class="main-products__swiper-wrapper swiper-wrapper">
+            <div class="js-swiper swiper-container" data-swiper-destroy="xl">
+                <div class="xl-grid-cols-3 swiper-wrapper">
 
                     <div class="main-products__category-card swiper-slide">
                         <div class="main-products__category-background" style="background-image: url({{ asset('img/sections/main-products/okna.jpg') }})"></div>

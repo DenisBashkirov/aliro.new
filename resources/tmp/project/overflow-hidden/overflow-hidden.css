@@ -1,0 +1,21 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .md-overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+@media (min-width:992px) {
+  .lg-overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+@media (min-width:1200px) {
+  .xl-overflow-hidden {
+    overflow: hidden;
+  }
+}

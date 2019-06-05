@@ -1,0 +1,68 @@
+@import "../../bootstrap"
+
+.xl-grid-cols-4
+
+  & > *
+    max-width: calc(100vw - #{$grid-column-gap})
+
+  @media ($brpt_xl)
+    @include grid(4)
+
+    & > *
+      width: calc(((#{$xl} - #{$grid-column-gap}) - 3 * #{$grid-column-gap}) / 4)
+
+
+.xl-grid-cols-3
+
+  & > *
+    max-width: calc(100vw - #{$grid-column-gap})
+
+  @media ($brpt_xl)
+    @include grid(3)
+
+    & > *
+      width: calc(((#{$xl} - #{$grid-column-gap}) - 2 * #{$grid-column-gap}) / 3)
+
+
+
+.lg-grid-cols-2
+
+  & > *
+    max-width: calc(100vw - #{$grid-column-gap})
+
+
+  @media ($brpt_md)
+    & > *
+      width: calc(((#{$lg} - #{$grid-column-gap}) - 1 * #{$grid-column-gap}) / 2)
+
+
+  @media ($brpt_lg)
+    @include grid(2)
+
+    & > *
+      width: calc(((#{$lg} - #{$grid-column-gap}) - 1 * #{$grid-column-gap}) / 2)
+
+
+  @media ($brpt_xl)
+    & > *
+      width: calc(((#{$xl} - #{$grid-column-gap}) - 1 * #{$grid-column-gap}) / 2)
+
+
+
+.md-grid-cols-2
+
+  & > *
+    max-width: calc(100vw - #{$grid-column-gap})
+
+  @media ($brpt_md)
+    @include grid(2)
+
+
+  @media ($brpt_lg)
+    & > *
+      width: calc(((#{$lg} - #{$grid-column-gap}) - 1 * #{$grid-column-gap}) / 2)
+
+
+  @media ($brpt_xl)
+    & > *
+      width: calc(((#{$xl} - #{$grid-column-gap}) - 1 * #{$grid-column-gap}) / 2)

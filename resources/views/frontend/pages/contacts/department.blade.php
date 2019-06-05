@@ -7,7 +7,7 @@
     @endif
 
     @if(isset($staff))
-        <div class="contacts-department__staff justify-content-center">
+        <div class="contacts-department__staff md-overflow-hidden">
             <div class="contacts-department__staff-swiper-container swiper-container">
 
                 <div class="swiper-wrapper">

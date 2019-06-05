@@ -1,7 +1,3 @@
-.main-products__categories {
-  display: flex;
-}
-
 @media (min-width:1200px) {
   .main-products__categories {
     display: block;

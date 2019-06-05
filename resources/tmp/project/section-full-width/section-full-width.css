@@ -1,0 +1,11 @@
+.section-full-width {
+  width: 100vw;
+  margin-left: calc((100vw - 100%)/ -2);
+}
+
+@media (max-width:767px) {
+  .sm-section-full-width {
+    width: 100vw;
+    margin-left: calc((100vw - 100%)/ -2);
+  }
+}

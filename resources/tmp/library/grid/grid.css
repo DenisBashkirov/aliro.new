@@ -1,0 +1,185 @@
+.xl-grid-cols-4>* {
+  max-width: calc(100vw - 30px);
+}
+
+.xl-grid-cols-3>* {
+  max-width: calc(100vw - 30px);
+}
+
+.lg-grid-cols-2>* {
+  max-width: calc(100vw - 30px);
+}
+
+.md-grid-cols-2>* {
+  max-width: calc(100vw - 30px);
+}
+
+@media (min-width:768px) {
+  .lg-grid-cols-2>* {
+    width: calc(((984px - 30px) - 1 * 30px)/ 2);
+  }
+
+  .md-grid-cols-2 {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -30px -15px 0 -15px;
+  }
+
+  .md-grid-cols-2>* {
+    margin: 30px 15px 0 15px;
+    width: calc((100% - 30px * 2)/ 2 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .md-grid-cols-2 {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      align-items: start;
+      margin: 0;
+    }
+
+    .md-grid-cols-2>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+}
+
+@media (min-width:992px) {
+  .lg-grid-cols-2 {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -30px -15px 0 -15px;
+  }
+
+  .lg-grid-cols-2>* {
+    margin: 30px 15px 0 15px;
+    width: calc((100% - 30px * 2)/ 2 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .lg-grid-cols-2 {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      align-items: start;
+      margin: 0;
+    }
+
+    .lg-grid-cols-2>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+
+  .lg-grid-cols-2>* {
+    width: calc(((984px - 30px) - 1 * 30px)/ 2);
+  }
+
+  .md-grid-cols-2>* {
+    width: calc(((984px - 30px) - 1 * 30px)/ 2);
+  }
+}
+
+@media (min-width:1200px) {
+  .xl-grid-cols-4 {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -30px -15px 0 -15px;
+  }
+
+  .xl-grid-cols-4>* {
+    margin: 30px 15px 0 15px;
+    width: calc((100% - 30px * 4)/ 4 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .xl-grid-cols-4 {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      align-items: start;
+      margin: 0;
+    }
+
+    .xl-grid-cols-4>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+
+  .xl-grid-cols-4>* {
+    width: calc(((1200px - 30px) - 3 * 30px)/ 4);
+  }
+
+  .xl-grid-cols-3 {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -30px -15px 0 -15px;
+  }
+
+  .xl-grid-cols-3>* {
+    margin: 30px 15px 0 15px;
+    width: calc((100% - 30px * 3)/ 3 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .xl-grid-cols-3 {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      align-items: start;
+      margin: 0;
+    }
+
+    .xl-grid-cols-3>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+
+  .xl-grid-cols-3>* {
+    width: calc(((1200px - 30px) - 2 * 30px)/ 3);
+  }
+
+  .lg-grid-cols-2>* {
+    width: calc(((1200px - 30px) - 1 * 30px)/ 2);
+  }
+
+  .md-grid-cols-2>* {
+    width: calc(((1200px - 30px) - 1 * 30px)/ 2);
+  }
+}

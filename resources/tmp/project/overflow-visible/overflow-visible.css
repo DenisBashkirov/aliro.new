@@ -1,0 +1,33 @@
+.overflow-visible {
+  overflow: visible;
+}
+
+.md-overflow-visible {
+  overflow: hidden;
+}
+
+.lg-overflow-visible {
+  overflow: hidden;
+}
+
+.xl-overflow-visible {
+  overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .md-overflow-visible {
+    overflow: visible;
+  }
+}
+
+@media (min-width:992px) {
+  .lg-overflow-visible {
+    overflow: visible;
+  }
+}
+
+@media (min-width:1200px) {
+  .xl-overflow-visible {
+    overflow: visible;
+  }
+}
