@@ -9,7 +9,7 @@
     <div class="elem-dealing elem-dealing_massive">
 
         <div class="container">
-            @include('frontend.sections.other-pages')
+            @yield('other-pages')
         </div>
 
         @include('frontend.sections.free-measuring-form')

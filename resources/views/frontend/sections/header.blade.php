@@ -27,7 +27,6 @@
                                 <div class="nav__category-content">
                                     <a href="{{ route('products', 'plastikovye-okna') }}" class="nav__dropdown-item">Пластиковые</a>
                                     <a href="{{ route('products', 'alyuminievye-okna') }}" class="nav__dropdown-item">Алюминиевые</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Энергосберегающие</a>
                                 </div>
                             </div>
                             <div class="nav__category">
@@ -35,29 +34,28 @@
                                 <div class="nav__category-content">
                                     <a href="{{ route('products', 'plastikovye-dveri') }}" class="nav__dropdown-item">Пластиковые</a>
                                     <a href="{{ route('products', 'alyuminievye-dveri') }}" class="nav__dropdown-item">Алюминиевые</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Раздвижные</a>
+                                    <a href="{{ route('products', 'avtomaticheskie-dveri') }}" class="nav__dropdown-item">Автоматические</a>
                                 </div>
                             </div>
                             <div class="nav__category">
                                 <div class="nav__category-title">Балконы и лоджии</div>
                                 <div class="nav__category-content">
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Пластиковые</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Алюминиевые</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Раздвижные</a>
+                                    <a href="{{ route('products', 'plastikovye-balkony') }}" class="nav__dropdown-item">Пластиковые</a>
+                                    <a href="{{ route('products', 'alyuminievye-balkony') }}" class="nav__dropdown-item">Алюминиевые</a>
                                 </div>
                             </div>
                             <div class="nav__category">
                                 <div class="nav__category-title">Конструкции</div>
                                 <div class="nav__category-content">
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Алюминиевые конструкции</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Перегородки</a>
+                                    <a href="{{ route('products', 'alyuminievye-konstruktsii') }}" class="nav__dropdown-item">Алюминиевые конструкции</a>
+                                    <a href="{{ route('products', 'ofisnye-peregorodki') }}" class="nav__dropdown-item">Офисные перегородки</a>
                                 </div>
                             </div>
                             <div class="nav__category nav__category_big">
                                 <div class="nav__category-title">Остекление</div>
                                 <div class="nav__category-content nav__category-content_horizontal">
                                     <div class="nav__dropdown-items-group">
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Домов и коттеджей</a>
+                                        <a href="{{ route('products', 'osteklenie-domov') }}" class="nav__dropdown-item">Домов и коттеджей</a>
                                         <a href="{{ route('products', '') }}" class="nav__dropdown-item">Беседок, веранд и террас</a>
                                         <a href="{{ route('products', '') }}" class="nav__dropdown-item">Бассейнов</a>
                                         <a href="{{ route('products', '') }}" class="nav__dropdown-item">Кафе и ресторанов</a>

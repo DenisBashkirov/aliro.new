@@ -55,3 +55,16 @@
     @endcomponent
 
 @endsection
+
+@section('other-pages')
+
+    @component('frontend.sections.other-pages', [
+        'pages'=>[
+            'Алюминиевые двери',
+            'Алюминиевые балконы',
+            'Алюминиевые конструкции',
+        ]
+    ])
+    @endcomponent
+
+@endsection

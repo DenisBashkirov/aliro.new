@@ -23,7 +23,7 @@
                                         </div>
 
                                         <div class="profile-preview-card__img">
-                                            <img src="{{ asset('img/products/pvc-placeholder.png') }}">
+                                            <img src="{{ asset('img/products/plastikovye-okna/' . $profile->name . '.png') }}">
                                         </div>
 
                                         <div class="profile-preview-card__body">
@@ -87,5 +87,18 @@
         </div>
 
     </div>
+
+@endsection
+
+@section('other-pages')
+
+    @component('frontend.sections.other-pages', [
+        'pages'=>[
+            'Пластиковые двери',
+            'Пластиковые окна',
+            'Раздвижные окна и двери'
+        ]
+    ])
+    @endcomponent
 
 @endsection
