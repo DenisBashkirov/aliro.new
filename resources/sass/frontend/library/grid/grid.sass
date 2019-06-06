@@ -3,7 +3,7 @@
 .xl-grid-cols-4
 
   & > *
-    max-width: calc(100vw - #{$grid-column-gap})
+    max-width: calc(100vw - 40px)
 
   @media ($brpt_xl)
     @include grid(4)
@@ -15,7 +15,13 @@
 .xl-grid-cols-3
 
   & > *
-    max-width: calc(100vw - #{$grid-column-gap})
+    max-width: calc(100vw - 40px)
+
+
+  @media ($brpt_md)
+    & > *
+      width: calc(((#{$xl} - #{$grid-column-gap}) - 2 * #{$grid-column-gap}) / 3)
+
 
   @media ($brpt_xl)
     @include grid(3)
@@ -28,7 +34,7 @@
 .lg-grid-cols-2
 
   & > *
-    max-width: calc(100vw - #{$grid-column-gap})
+    max-width: calc(100vw - 40px)
 
 
   @media ($brpt_md)
@@ -52,7 +58,7 @@
 .md-grid-cols-2
 
   & > *
-    max-width: calc(100vw - #{$grid-column-gap})
+    max-width: calc(100vw - 40px)
 
   @media ($brpt_md)
     @include grid(2)

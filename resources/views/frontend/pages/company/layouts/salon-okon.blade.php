@@ -104,7 +104,7 @@
                     <h2 class="h2_small font-weight_extrabold">Наш адрес</h2>
                 </div>
 
-                <div class="contacts-division__body">
+                <div class="contacts-division__body elem-dealing elem-dealing_tiny">
 
                     <div class="contacts-division__contact-details font-weight_medium">
 

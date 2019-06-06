@@ -1,4 +1,4 @@
-<section class="contacts-division section section-margin_large">
+<section class="contacts-division section-margin_large">
 
     <div class="section__header section__header_linked">
         <h2 class="h2_small font-weight_extrabold">{{ $title }}</h2>
@@ -8,7 +8,7 @@
         </a>
     </div>
 
-    <div class="contacts-division__body">
+    <div class="contacts-division__body elem-dealing elem-dealing_tiny">
 
         <div class="contacts-division__contact-details font-weight_medium">
 

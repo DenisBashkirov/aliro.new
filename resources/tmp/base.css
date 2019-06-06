@@ -159,3 +159,12 @@ img {
 video {
   max-width: 100%;
 }
+
+a {
+  color: #fb0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

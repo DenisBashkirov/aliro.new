@@ -22,6 +22,6 @@
         }));
 
         ymapRetail.behaviors.disable('scrollZoom');
-        ymapRetail.behaviors.disable('drag');
+        //ymapRetail.behaviors.disable('drag');
     }
 </script>

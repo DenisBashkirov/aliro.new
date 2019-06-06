@@ -4,10 +4,9 @@
   overflow: hidden
   border-radius: 3px
   max-width: calc(100vw - #{$grid-column-gap})
-  height: 100%
+  height: auto
   box-sizing: border-box
-  box-shadow: 0 2px 12px #a8afc4
-
+  border: 1px solid rgba(#000,.12)
 
 
   @media ($brpt_md)
@@ -17,8 +16,8 @@
 
 
   @media ($brpt_xl)
-    box-shadow: 0 0 2px #a8afc4
-    transition: all $duration_normal
+    box-shadow: 0 0 0 rgba(#000,.23)
+    transition: all $duration_fast
 
     &:hover
-      box-shadow: 0 2px 12px #a8afc4
+      box-shadow: 0 2px 12px rgba(#000,.23)

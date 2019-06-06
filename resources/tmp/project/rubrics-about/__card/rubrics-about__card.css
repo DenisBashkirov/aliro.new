@@ -2,9 +2,9 @@
   overflow: hidden;
   border-radius: 3px;
   max-width: calc(100vw - 30px);
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
-  box-shadow: 0 2px 12px #a8afc4;
+  border: 1px solid rgba(0,0,0,.12);
 }
 
 @media (min-width:768px) {
@@ -16,11 +16,11 @@
 
 @media (min-width:1200px) {
   .rubrics-about__card {
-    box-shadow: 0 0 2px #a8afc4;
-    transition: all .35s;
+    box-shadow: 0 0 0 rgba(0,0,0,.23);
+    transition: all .2s;
   }
 
   .rubrics-about__card:hover {
-    box-shadow: 0 2px 12px #a8afc4;
+    box-shadow: 0 2px 12px rgba(0,0,0,.23);
   }
 }

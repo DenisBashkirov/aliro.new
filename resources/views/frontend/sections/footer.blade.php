@@ -1,4 +1,4 @@
-<footer class="footer section-margin_large">
+<footer class="footer">
     <div class="footer__container container">
 
         <div class="footer__socials">
@@ -14,7 +14,7 @@
                     <a href="#" class="footer__section-link">показать на карте</a>
                 </div>
                 <div class="footer__section">
-                    <a href="te:+78612139292" class="footer__section-heading">8(861)213-92-92</a>
+                    <a href="te:+88612139292" class="footer__section-heading">8 (861) 213-92-92</a>
                     <p class="footer__section-text">сегодня: с 9<span class="sup">00</span> до 19<span class="sup">00</span></p>
                     <a href="#" class="footer__section-link">график работы</a>
                 </div>

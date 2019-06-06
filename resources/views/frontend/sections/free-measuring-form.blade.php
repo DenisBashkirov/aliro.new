@@ -1,4 +1,4 @@
-<section class="free-measuring-section section-margin_large">
+<section class="free-measuring-section">
     <div class="container">
 
         <div class="free-measuring-section__body">

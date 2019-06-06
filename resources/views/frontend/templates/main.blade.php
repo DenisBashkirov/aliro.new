@@ -22,11 +22,14 @@
 
 @include('frontend.sections.header')
 <div class="body-wrapper">
-    @component('frontend.sections.title-screen', ['page'=>$page, 'title_screen_size'=>$title_screen_size]) @endcomponent
-    @yield('main_content')
-</div>
 
-@include('frontend.sections.footer')
+    @component('frontend.sections.title-screen', ['page'=>$page, 'title_screen_size'=>$title_screen_size]) @endcomponent
+
+    <div class="main-content elem-dealing elem-dealing_massive">
+        @yield('main_content')
+        @include('frontend.sections.footer')
+    </div>
+</div>
 
 
 @include('frontend.sources.scripts')

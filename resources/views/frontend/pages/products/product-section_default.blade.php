@@ -1,4 +1,4 @@
-<section class="product-section product-section_default section section-margin_large">
+<section id="{{ Str::slug($title) }}" class="product-section product-section_default">
     <div class="product-section__container container">
         <div class="product-section__wrapper {{ isset($wrapper_inverse) && $wrapper_inverse ? 'product-section__wrapper_inverse' : '' }}">
 
@@ -14,6 +14,7 @@
                     </div>
                 @endif
 
+                {{--
                 <div class="product-section__specifics product-section__specifics-swiper swiper-container">
                     <div class="product-section__specifics-swiper-wrapper swiper-wrapper">
                         <div class="product-section__specific-item swiper-slide">
@@ -35,14 +36,17 @@
                     </div>
                     <div class="swiper-scrollbar hidden_md"></div>
                 </div>
+                --}}
 
+                {{--
                 <div class="product-section__action justify-content-center">
                     <button class="button button_medium button_primary">получить расчёт</button>
                 </div>
+                --}}
 
             </div>
 
-            <div class="product-section__cover">
+            <div class="product-section__cover border-radius overflow-hidden">
                 <img src="{{ asset($img_src) }}" alt="{{ $img_alt }}">
             </div>
 

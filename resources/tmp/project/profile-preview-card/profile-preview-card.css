@@ -1,5 +1,4 @@
 .profile-preview-card {
-  padding: 5rem 0;
   position: relative;
 }
 
@@ -23,13 +22,25 @@
 }
 
 @media (max-width:767px) {
+  .profile-preview-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-preview-card>:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  .profile-preview-card>* {
+    flex-shrink: 0;
+  }
+
   .profile-preview-card:after {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100vw;
     height: 100%;
-    box-shadow: 0 2px 13px rgba(0,0,0,.23);
     left: -15px;
   }
 }

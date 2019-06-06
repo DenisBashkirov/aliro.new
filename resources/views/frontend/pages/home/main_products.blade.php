@@ -1,4 +1,4 @@
-<section class="main-products section-margin_large">
+<section class="main-products">
     <div class="container elem-dealing elem-dealing_medium">
 
         <div class="section__header align-center font-weight_extrabold">

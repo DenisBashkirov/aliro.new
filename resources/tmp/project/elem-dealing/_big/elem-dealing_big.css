@@ -1,0 +1,30 @@
+.elem-dealing_big {
+  display: flex;
+  flex-direction: column;
+}
+
+.elem-dealing_big>:not(:first-child) {
+  margin-top: 60px;
+}
+
+@media (min-width:768px) {
+  .elem-dealing_big {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem-dealing_big>:not(:first-child) {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width:1200px) {
+  .elem-dealing_big {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem-dealing_big>:not(:first-child) {
+    margin-top: 80px;
+  }
+}

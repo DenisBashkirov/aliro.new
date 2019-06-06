@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.nav__item:hover {
+  text-decoration: none;
+}
+
 a.nav__item {
   cursor: pointer;
 }

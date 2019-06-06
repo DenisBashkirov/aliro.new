@@ -1,7 +1,6 @@
 .profile-preview-card__img {
   display: flex;
   align-items: center;
-  margin-top: 0!important;
 }
 
 @media (min-width:768px) {

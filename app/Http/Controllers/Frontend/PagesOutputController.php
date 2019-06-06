@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use App\Helpers\Grid as Grid;
 use Illuminate\Support\Facades\Config;
+use Cache;
 
 class PagesOutputController extends FrontendBaseController
 {
@@ -51,12 +52,6 @@ class PagesOutputController extends FrontendBaseController
 
     public function home()
     {
-        $pvc_profile_categories = PvcProfileCategory::orderBy('ordering')->get();
-        $this->vars = Arr::add($this->vars, 'pvc_profile_categories', $pvc_profile_categories);
-
-        $items_counter = 0;
-        $this->vars = Arr::add($this->vars, 'items_counter', $items_counter);
-
         return $this->renderOutput();
     }
 
@@ -66,6 +61,15 @@ class PagesOutputController extends FrontendBaseController
         $this->template .= '.layouts.' . $page_slug;
 
         $this->page = Page::where('slug', $page_slug)->first();
+
+        Cache::rememberForever('pvc_profile_categories', function () {
+            return PvcProfileCategory::orderBy('ordering')->get();
+        });
+        $pvc_profile_categories = Cache::get('pvc_profile_categories');
+        $this->vars = Arr::add($this->vars, 'pvc_profile_categories', $pvc_profile_categories);
+
+        $items_counter = 0;
+        $this->vars = Arr::add($this->vars, 'items_counter', $items_counter);
 
         return $this->renderOutput();
     }

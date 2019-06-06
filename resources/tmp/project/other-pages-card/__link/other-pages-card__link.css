@@ -1,0 +1,9 @@
+.other-pages-card__link {
+  margin-top: 15px;
+}
+
+@media (min-width:768px) {
+  .other-pages-card__link {
+    margin-top: 20px;
+  }
+}

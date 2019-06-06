@@ -23,7 +23,7 @@
         }));
 
         ymapRetail.behaviors.disable('scrollZoom');
-        ymapRetail.behaviors.disable('drag');
+        //ymapRetail.behaviors.disable('drag');
 
 
         ymapProduction = new ymaps.Map('ymap_production', {
@@ -43,6 +43,6 @@
         }));
 
         ymapProduction.behaviors.disable('scrollZoom');
-        ymapProduction.behaviors.disable('drag');
+        //ymapProduction.behaviors.disable('drag');
     }
 </script>

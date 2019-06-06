@@ -2,9 +2,19 @@
 
 @section('main_content')
 
-    @yield('products_content')
+    <div class="elem-dealing elem-dealing_massive">
+        @yield('products_content')
+    </div>
 
-    @include('frontend.sections.free-measuring-form')
-    @include('frontend.sections.portfolio-recap')
+    <div class="elem-dealing elem-dealing_massive">
+
+        <div class="container">
+            @include('frontend.sections.other-pages')
+        </div>
+
+        @include('frontend.sections.free-measuring-form')
+        @include('frontend.sections.portfolio-recap')
+
+    </div>
 
 @endsection

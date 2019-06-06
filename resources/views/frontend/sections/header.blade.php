@@ -33,8 +33,8 @@
                             <div class="nav__category">
                                 <div class="nav__category-title">Двери</div>
                                 <div class="nav__category-content">
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Пластиковые</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Алюминиевые</a>
+                                    <a href="{{ route('products', 'plastikovye-dveri') }}" class="nav__dropdown-item">Пластиковые</a>
+                                    <a href="{{ route('products', 'alyuminievye-dveri') }}" class="nav__dropdown-item">Алюминиевые</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Раздвижные</a>
                                 </div>
                             </div>

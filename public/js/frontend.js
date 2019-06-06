@@ -275,7 +275,7 @@ $(document).ready(function () {
             hide: false
         },
         breakpoints: {
-            md: {
+            768: {
                 slidesOffsetBefore: 0,
                 slidesOffsetAfter: 0,
                 centeredSlides: false,
