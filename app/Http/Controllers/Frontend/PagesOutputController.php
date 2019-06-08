@@ -28,7 +28,6 @@ class PagesOutputController extends FrontendBaseController
     public function __construct()
     {
         parent::__construct();
-        dd('test');
         $this->title_screen_size = 'full';
 
         // поиск нужной страницы из базы данных через значение URN
