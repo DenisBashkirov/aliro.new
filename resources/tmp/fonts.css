@@ -44,10 +44,10 @@
 }
 
 @font-face {
-  font-family: Montserrat-Semibold;
+  font-family: Montserrat-SemiBold;
   font-display: fallback;
-  src: url(../fonts/Montserrat/Montserrat-Semibold.eot);
-  src: url(../fonts/Montserrat/Montserrat-Semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/Montserrat/Montserrat-Semibold.woff) format("woff"),url(../fonts/Montserrat/Montserrat-Semibold.ttf) format("truetype"),url(../fonts/Montserrat/Montserrat-Semibold.svg#Panton) format("svg");
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.eot);
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/Montserrat/Montserrat-SemiBold.woff) format("woff"),url(../fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype"),url(../fonts/Montserrat/Montserrat-SemiBold.svg#Panton) format("svg");
   font-style: normal;
   font-weight: 600;
 }
