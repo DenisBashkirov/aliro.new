@@ -9,7 +9,7 @@
             'address'=>'г. Краснодар, ул. Калинина, 258',
             'phone'=>'8(861)213-92-92',
             'link_text'=>'О салоне окон',
-            'link_route'=>'',
+            'link_route'=>route('company', 'salon-okon'),
             'ymap_id'=>'ymap_retail'
         ])
             @slot('departments')
@@ -62,7 +62,7 @@
             'title'=>'Завод "Индустрия Окон"',
             'address'=>'п. Яблоновский, Шапсугское шоссе, 3/15',
             'link_text'=>'О производстве',
-            'link_route'=>'',
+            'link_route'=>route('company', 'production'),
             'ymap_id'=>'ymap_production'
         ])
             @slot('departments')

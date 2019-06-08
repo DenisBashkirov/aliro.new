@@ -44,7 +44,7 @@
                                 <div class="rubrics-about__card-content">
                                     <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Работа с дилерами</h3>
                                     <div class="rubric-about__link">
-                                        <a href="#" class="link link_arrowed">
+                                        <a href="#" class="link link_arrowed hidden">
                                             <span>О работе с дилерами</span>
                                             <span class="icon-arrow"></span>
                                         </a>

@@ -8,8 +8,8 @@
 
     <p class="article-preview-card__description">Есть ли технические ограничения на монтажные работы в зминий период</p>
 
-    <a href="#" class="link link_arrowed text_medium">
-        Читать
+    <a href="#" class="link link_arrowed text_medium hidden">
+        <span>Читать</span>
         <span class="icon-arrow link__arrow"></span>
     </a>
 

@@ -15,10 +15,8 @@
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Окна</h3>
                             <div class="main-products__category-list">
-                                <a href="#" class="main-products__category-list-item">Пластиковые</a>
-                                <a href="#" class="main-products__category-list-item">Алюминиевые</a>
-                                <a href="#" class="main-products__category-list-item">Развдижные</a>
-                                <a href="#" class="main-products__category-list-item">Энергосберегающие</a>
+                                <a href="{{ route('products', 'plastikovye-okna') }}" class="main-products__category-list-item">Пластиковые</a>
+                                <a href="{{ route('products', 'alyuminievye-okna') }}" class="main-products__category-list-item">Алюминиевые</a>
                             </div>
                         </div>
                     </div>
@@ -28,9 +26,8 @@
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Двери</h3>
                             <div class="main-products__category-list">
-                                <a href="#" class="main-products__category-list-item">Пластиковые</a>
-                                <a href="#" class="main-products__category-list-item">Алюминиевые</a>
-                                <a href="#" class="main-products__category-list-item">Развдижные</a>
+                                <a href="{{ route('products', 'plastikovye-dveri') }}" class="main-products__category-list-item">Пластиковые</a>
+                                <a href="{{ route('products', 'alyuminievye-dveri') }}" class="main-products__category-list-item">Алюминиевые</a>
                             </div>
                         </div>
                     </div>
@@ -40,10 +37,8 @@
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Балконы и лоджии</h3>
                             <div class="main-products__category-list">
-                                <a href="#" class="main-products__category-list-item">Пластиковые</a>
-                                <a href="#" class="main-products__category-list-item">Алюминиевые</a>
-                                <a href="#" class="main-products__category-list-item">Развдижные</a>
-                                <a href="#" class="main-products__category-list-item">Энергосберегающие</a>
+                                <a href="{{ route('products', 'plastikovye-balkony') }}" class="main-products__category-list-item">Пластиковые</a>
+                                <a href="{{ route('products', 'alyuminievye-balkony') }}" class="main-products__category-list-item">Алюминиевые</a>
                             </div>
                         </div>
                     </div>
@@ -53,8 +48,8 @@
                         <div class="main-products__category-content">
                             <h3 class="main-products__category-title font-weight_bold">Конструкции</h3>
                             <div class="main-products__category-list">
-                                <a href="#" class="main-products__category-list-item">Алюминиевые конструкции</a>
-                                <a href="#" class="main-products__category-list-item">Перегородки</a>
+                                <a href="{{ route('products', 'alyuminievye-konstruktsii') }}" class="main-products__category-list-item">Алюминиевые конструкции</a>
+                                <a href="{{ route('products', 'ofisnye-peregorodki') }}" class="main-products__category-list-item">Перегородки</a>
                             </div>
                         </div>
                     </div>
@@ -65,18 +60,17 @@
                             <h3 class="main-products__category-title font-weight_bold">Остекление</h3>
                             <div class="main-products__category-lists-group">
                                 <div class="main-products__category-list">
-                                    <a href="#" class="main-products__category-list-item">Домов и коттеджей</a>
-                                    <a href="#" class="main-products__category-list-item">Беседок, веранд и террас</a>
-                                    <a href="#" class="main-products__category-list-item">Бассейнов</a>
-                                    <a href="#" class="main-products__category-list-item">Кафе и ресторанов</a>
-                                    <a href="#" class="main-products__category-list-item">Зданий и помещений</a>
-                                    <a href="#" class="main-products__category-list-item">Кафе и ресторанов</a>
+                                    <a href="{{ route('products', 'osteklenie-domov') }}" class="main-products__category-list-item">Домов и коттеджей</a>
+                                    <a href="{{ route('products', 'osteklenie-besedok-verand-i-terras') }}" class="main-products__category-list-item">Беседок, веранд и террас</a>
+                                    <a href="{{ route('products', 'osteklenie-basseynov') }}" class="main-products__category-list-item">Бассейнов</a>
+                                    <a href="{{ route('products', 'osteklenie-kafe-i-restoranov') }}" class="main-products__category-list-item">Кафе и ресторанов</a>
+                                    <a href="{{ route('products', 'osteklenie-oteley-i-gostinits') }}" class="main-products__category-list-item">Отелей и гостиниц</a>
                                 </div>
                                 <div class="main-products__category-list">
                                     <a href="#" class="main-products__category-list-item">Фасадное</a>
-                                    <a href="#" class="main-products__category-list-item">Витражное</a>
+                                    <a href="#" class="main-products__category-list-item">Панорамное</a>
                                     <a href="#" class="main-products__category-list-item">Безрамное</a>
-                                    <a href="#" class="main-products__category-list-item">Раздвижное</a>
+                                    <a href="{{ route('products', 'razdvizhnye-okna-i-dveri') }}" class="main-products__category-list-item">Раздвижное</a>
                                     <a href="#" class="main-products__category-list-item">Защитное</a>
                                 </div>
                             </div>

@@ -46,7 +46,7 @@
 
                 <div class="rubrics-about__card swiper-slide">
                     <div class="rubrics-about__card-cover">
-                        <img src="{{ asset('img/sections/rubrics-about/production.jpg') }}" alt="Работа с дилерами">
+                        <img src="{{ asset('img/sections/rubrics-about/dealers.jpg') }}" alt="Работа с дилерами">
                     </div>
                     <div class="rubrics-about__card-content">
                         <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Работа с дилерами</h3>
@@ -56,7 +56,7 @@
                             <li>фигурный профиль</li>
                         </ul>
                         <div class="rubric-about__link">
-                            <a href="#" class="link link_arrowed">
+                            <a href="#" class="link link_arrowed hidden">
                                 <span>О работе с дилерами</span>
                                 <span class="icon-arrow"></span>
                             </a>
@@ -66,7 +66,7 @@
 
                 <div class="rubrics-about__card swiper-slide">
                     <div class="rubrics-about__card-cover">
-                        <img src="{{ asset('img/sections/rubrics-about/rehau.jpg') }}" alt="Работа с застройщиками">
+                        <img src="{{ asset('img/sections/rubrics-about/builders.jpg') }}" alt="Работа с застройщиками">
                     </div>
                     <div class="rubrics-about__card-content">
                         <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Работа с застройщиками</h3>
@@ -76,7 +76,7 @@
                             <li>фигурный профиль</li>
                         </ul>
                         <div class="rubric-about__link">
-                            <a href="#" class="link link_arrowed">
+                            <a href="#" class="link link_arrowed hidden">
                                 <span>О работе с объектами</span>
                                 <span class="icon-arrow"></span>
                             </a>

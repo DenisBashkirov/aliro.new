@@ -56,14 +56,13 @@
                                 <div class="nav__category-content nav__category-content_horizontal">
                                     <div class="nav__dropdown-items-group">
                                         <a href="{{ route('products', 'osteklenie-domov') }}" class="nav__dropdown-item">Домов и коттеджей</a>
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Беседок, веранд и террас</a>
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Бассейнов</a>
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Кафе и ресторанов</a>
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Отелей и гостиниц</a>
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Зданий и помещений</a>
+                                        <a href="{{ route('products', 'osteklenie-besedok-verand-i-terras') }}" class="nav__dropdown-item">Беседок, веранд и террас</a>
+                                        <a href="{{ route('products', 'osteklenie-basseynov') }}" class="nav__dropdown-item">Бассейнов</a>
+                                        <a href="{{ route('products', 'osteklenie-kafe-i-restoranov') }}" class="nav__dropdown-item">Кафе и ресторанов</a>
+                                        <a href="{{ route('products', 'osteklenie-oteley-i-gostinits') }}" class="nav__dropdown-item">Отелей и гостиниц</a>
                                     </div>
                                     <div class="nav__dropdown-items-group">
-                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Витражное</a>
+                                        <a href="{{ route('products', '') }}" class="nav__dropdown-item">Панорамное</a>
                                         <a href="{{ route('products', '') }}" class="nav__dropdown-item">Фасадное</a>
                                         <a href="{{ route('products', '') }}" class="nav__dropdown-item">Безрамное</a>
                                         <a href="{{ route('products', 'razdvizhnye-okna-i-dveri') }}" class="nav__dropdown-item">Раздвижное</a>
@@ -74,17 +73,19 @@
                             <div class="nav__category">
                                 <div class="nav__category-title">Дизайнерские решения</div>
                                 <div class="nav__category-content">
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Цветные окна и двери</a>
-                                    <a href="{{ route('products', '') }}" class="nav__dropdown-item">Декоративные решения</a>
+                                    <a href="{{ route('products', 'tsvetnye-okna-i-dveri') }}" class="nav__dropdown-item">Цветные окна и двери</a>
+                                    <a href="{{ route('products', 'dekorativnye-resheniya') }}" class="nav__dropdown-item">Декоративные решения</a>
                                 </div>
                             </div>
                             <div class="nav__category">
                                 <div class="nav__category-title">Комплектующие</div>
                                 <div class="nav__category-content">
+                                    {{--
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Стеклопакеты</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Фурнитура</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Подоконники</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Москитные сетки</a>
+                                    --}}
                                 </div>
                             </div>
                         </div>

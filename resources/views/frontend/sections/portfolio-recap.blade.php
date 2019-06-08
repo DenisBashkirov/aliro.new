@@ -3,7 +3,7 @@
 
         <div class="portfolio-recap__header section__header_linked">
             <h2 class="h2_medium font-weight_extrabold">Наши работы</h2>
-            <a href="#" class="link link_arrowed link_large visible_md">
+            <a href="#" class="link link_arrowed link_large visible_md hidden">
                 <span>Все работы</span>
                 <span class="icon-arrow"></span>
             </a>
@@ -61,7 +61,7 @@
 
         </div>
 
-        <a href="#" class="link link_arrowed link_large hidden_md">
+        <a href="#" class="link link_arrowed link_large hidden_md hidden">
             <span>Все работы</span>
             <span class="icon-arrow"></span>
         </a>

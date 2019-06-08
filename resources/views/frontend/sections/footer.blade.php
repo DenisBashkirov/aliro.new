@@ -11,12 +11,12 @@
                 <div class="footer__section">
                     <p class="footer__section-heading">Салон окон "Алиро"</p>
                     <p class="footer__section-text">г. Краснодар, ул. Калинина, 258</p>
-                    <a href="#" class="footer__section-link">показать на карте</a>
+                    <a href="#" class="footer__section-link hidden">показать на карте</a>
                 </div>
                 <div class="footer__section">
                     <a href="te:+88612139292" class="footer__section-heading">8 (861) 213-92-92</a>
                     <p class="footer__section-text">сегодня: с 9<span class="sup">00</span> до 19<span class="sup">00</span></p>
-                    <a href="#" class="footer__section-link">график работы</a>
+                    <a href="#" class="footer__section-link hidden">график работы</a>
                 </div>
             </div>
 

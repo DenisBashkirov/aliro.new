@@ -2,7 +2,7 @@
 
     <div class="section__header section__header_linked">
         <h2 class="h2_small font-weight_extrabold">{{ $title }}</h2>
-        <a href="#" class="link link_arrowed link_large visible_md">
+        <a href="{{ $link_route }}" class="link link_arrowed link_large visible_md">
             <span>{{ $link_text }}</span>
             <span class="icon-arrow"></span>
         </a>
@@ -24,7 +24,7 @@
                 </a>
             @endif
 
-            <a href="#" class="link link_arrowed link_large hidden_md">
+            <a href="{{ $link_route }}" class="link link_arrowed link_large hidden_md">
                 <span>{{ $link_text }}</span>
                 <span class="icon-arrow"></span>
             </a>
