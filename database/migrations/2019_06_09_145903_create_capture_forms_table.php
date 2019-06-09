@@ -13,7 +13,7 @@ class CreateCaptureFormsTable extends Migration
      */
     public function up()
     {
-        if(Schema::hasTable('capture_forms'))
+        if(!Schema::hasTable('capture_forms'))
         {
             Schema::create('capture_forms', function (Blueprint $table) {
                 $table->bigIncrements('id');
