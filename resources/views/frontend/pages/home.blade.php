@@ -1,6 +1,6 @@
 @extends('frontend.templates.main')
 
-@section('main_content')
+@section('template_content')
 
     <div class="content_main">
         @include('frontend.pages.home.main_products')

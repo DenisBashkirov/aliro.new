@@ -1,5 +1,5 @@
-.main-content {
-  min-height: 100vh;
+.justify-content-between {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }

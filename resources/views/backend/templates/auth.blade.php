@@ -1,4 +1,4 @@
-@extends('backend.templates.main')
+@extends('backend.templates.document')
 
 @section('main_content')
 

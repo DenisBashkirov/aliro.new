@@ -1,11 +1,15 @@
 .title-screen {
+  height: 100vh;
   margin-bottom: 80px;
   background-position: center;
   background-size: cover;
+  padding-top: 54px;
+  box-sizing: border-box;
 }
 
 @media (min-width:768px) {
   .title-screen {
+    padding-top: 60px;
     margin-bottom: 100px;
   }
 }

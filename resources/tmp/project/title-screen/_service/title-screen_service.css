@@ -1,0 +1,15 @@
+.title-screen_service {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  height: auto;
+}
+
+@media (max-width:767px) {
+  .title-screen_service {
+    min-height: 380px;
+    margin-bottom: -70px;
+  }
+}

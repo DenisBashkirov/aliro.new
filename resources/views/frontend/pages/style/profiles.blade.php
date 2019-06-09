@@ -2,7 +2,7 @@
 
 @extends('frontend.templates.main')
 
-@section('main_content')
+@section('template_content')
 
     @include('frontend.sections.header')
 

@@ -1,6 +1,6 @@
 @extends('frontend.templates.main')
 
-@section('main_content')
+@section('template_content')
 
     <section class="articles-preview-section">
         <div class="articles-preview-section__container">

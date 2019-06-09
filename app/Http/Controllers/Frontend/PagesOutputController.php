@@ -33,7 +33,9 @@ class PagesOutputController extends FrontendBaseController
         // поиск нужной страницы из базы данных через значение URN
         $urn = str_replace(url()->to(''), '', url()->current());
         if($urn)
-            $this->page = Page::where('urn', $urn)->first();
+        {
+            $this->page = Page::where('urn', $urn)->firstOrFail();
+        }
         else
             $this->page = Page::where('urn', '/')->first();
     }
@@ -97,6 +99,11 @@ class PagesOutputController extends FrontendBaseController
     {
         $this->title_screen_size = 'small';
 
+        return $this->renderOutput();
+    }
+
+    public function thanks()
+    {
         return $this->renderOutput();
     }
 }

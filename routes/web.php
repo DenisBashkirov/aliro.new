@@ -53,11 +53,9 @@ Route::group(
                 Route::get($page->category->slug . '/{page_slug}', 'PagesOutputController@' . $page->category->slug)->name($page->category->slug);
             else
                 Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
-
-            //Route::get($page->urn, 'PagesOutputController@' . $page->slug)->name($page->slug);
         }
 
-        //Route::get('/products/{product}', 'PagesOutputController@product')->name('product');
+        Route::post('/thanks', ['uses'=>'PagesOutputController@thanks', 'as'=>'thanks']);
     }
 );
 

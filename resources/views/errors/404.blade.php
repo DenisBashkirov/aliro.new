@@ -1,0 +1,1 @@
+@include('frontend.errors.404')
