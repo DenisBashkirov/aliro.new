@@ -17,6 +17,10 @@ use Illuminate\Support\Arr;
 use App\Helpers\Grid as Grid;
 use Illuminate\Support\Facades\Config;
 use Cache;
+use App\Events\onCaptureFormOrderReceived;
+use Log;
+use Mail;
+use App\Mail\CaptureFormOrderReceived;
 
 class PagesOutputController extends FrontendBaseController
 {
@@ -102,8 +106,15 @@ class PagesOutputController extends FrontendBaseController
         return $this->renderOutput();
     }
 
-    public function thanks()
+
+    public function thanks(Request $request)
     {
+        $data = $request->all();
+
+        Mail::to('okna@aliro.ru')->send(new CaptureFormOrderReceived($data));
+
+        //event(new onCaptureFormOrderReceived());
+
         return $this->renderOutput();
     }
 }

@@ -406,4 +406,25 @@ $(document).ready(function () {
     });
 
 
+    /*
+    INPUT MASKS
+     */
+    var $inputPhone = $('.js-mask_phone');
+    $inputPhone.mask("9(999)999-99-99");
+
+
+
+    /*
+    ПЛАВЫНЙ СКРОЛЛ
+     */
+    var header = document.querySelector('.header');
+    var headerHeight = parseInt(getComputedStyle(header).height) - 1;
+
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: ($(_href).offset().top - headerHeight)+"px"}, 1200, 'easeInOutQuart');
+        return false;
+    });
+
+
 });

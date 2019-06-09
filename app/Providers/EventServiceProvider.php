@@ -18,6 +18,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+
+        'App\Events\onCaptureFormOrderReceived' => [
+            'App\Listeners\RegisterCaptureForm',
+            'App\Listeners\RegisterClient',
+            'App\Listeners\SendCaptureFormOrderNotification',
+        ],
     ];
 
     /**

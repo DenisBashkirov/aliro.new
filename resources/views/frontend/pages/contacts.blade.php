@@ -66,6 +66,7 @@
             'ymap_id'=>'ymap_production'
         ])
             @slot('departments')
+                {{--
                 <div class="contacts-section contacts-section_big">
                     @component('frontend.pages.contacts.department', ['title'=>'Дилерский отдел - региональные менеджеры', 'staffed'=>true])
                         @slot('staff')
@@ -173,7 +174,7 @@
                         ]) @endcomponent
 
                     </div>
-                </section>
+                </section>--}}
             @endslot
         @endcomponent
 
