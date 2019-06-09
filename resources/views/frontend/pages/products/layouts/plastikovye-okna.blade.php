@@ -68,7 +68,7 @@
 
                                             <p class="profile-preview-card__utp font-weight_bold">{{ $profile->utp }}</p>
 
-                                            <div class="justify-content-center">
+                                            <div class="justify-content-center hidden">
                                                 <button type="button" class="button button_primary button_small">расчитать стоимость</button>
                                             </div>
 

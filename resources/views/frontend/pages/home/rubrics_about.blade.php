@@ -16,7 +16,7 @@
                             <li>цены без посредников</li>
                         </ul>
                         <div class="rubric-about__link">
-                            <a href="#" class="link link_arrowed">
+                            <a href="{{ route('company', 'production') }}" class="link link_arrowed">
                                 <span>О заводе</span>
                                 <span class="icon-arrow"></span>
                             </a>
@@ -36,7 +36,7 @@
                             <li>фигурный профиль</li>
                         </ul>
                         <div class="rubric-about__link">
-                            <a href="#" class="link link_arrowed">
+                            <a href="{{ route('products', 'plastikovye-okna') }}" class="link link_arrowed">
                                 <span>Об окнах Rehau</span>
                                 <span class="icon-arrow"></span>
                             </a>

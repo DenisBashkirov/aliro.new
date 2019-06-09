@@ -2,7 +2,7 @@
 
 @section('template_content')
 
-    <div class="container">
+    <div class="container elem-dealing elem-dealing_massive">
 
         @component('frontend.pages.contacts.division', [
             'title'=>'Салон окон "Алиро"',

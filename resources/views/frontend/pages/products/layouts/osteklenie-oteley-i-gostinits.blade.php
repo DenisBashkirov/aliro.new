@@ -10,7 +10,7 @@
         ])
 
         @slot('text')
-
+            <p></p>
         @endslot
 
     @endcomponent

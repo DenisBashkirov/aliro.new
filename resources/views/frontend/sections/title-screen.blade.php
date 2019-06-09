@@ -2,7 +2,7 @@
     <div class="title-screen__container title-screen__container_{{ $title_screen_size }} container">
 
         <div class="title-screen__page-title">
-            <div class="title-screen__breadcrumbs breadcrumbs">
+            <div class="title-screen__breadcrumbs breadcrumbs hidden">
                 <a href="#" class="breadcrumbs__item">Главная</a>
                 <span class="breadcrumbs__arrow icon-arrow"></span>
                 <a href="#" class="breadcrumbs__item">Продукция</a>

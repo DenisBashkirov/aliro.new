@@ -67,11 +67,9 @@
                                     <a href="{{ route('products', 'osteklenie-oteley-i-gostinits') }}" class="main-products__category-list-item">Отелей и гостиниц</a>
                                 </div>
                                 <div class="main-products__category-list">
-                                    <a href="#" class="main-products__category-list-item">Фасадное</a>
-                                    <a href="#" class="main-products__category-list-item">Панорамное</a>
-                                    <a href="#" class="main-products__category-list-item">Безрамное</a>
+                                    <a href="{{ route('products', 'fasadnoe-osteklenie') }}" class="main-products__category-list-item">Фасадное</a>
+                                    <a href="{{ route('products', 'panoramnoe-osteklenie') }}" class="main-products__category-list-item">Панорамное</a>
                                     <a href="{{ route('products', 'razdvizhnye-okna-i-dveri') }}" class="main-products__category-list-item">Раздвижное</a>
-                                    <a href="#" class="main-products__category-list-item">Защитное</a>
                                 </div>
                             </div>
                         </div>
