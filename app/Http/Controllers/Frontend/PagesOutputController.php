@@ -122,6 +122,7 @@ class PagesOutputController extends FrontendBaseController
         $data = $request->all();
 
         Mail::to('okna@aliro.ru')->send(new CaptureFormOrderReceived($data));
+        Mail::to('bashkirov.denis@aliro.ru')->send(new CaptureFormOrderReceived($data));
 
         //event(new onCaptureFormOrderReceived());
 
