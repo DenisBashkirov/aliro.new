@@ -17,7 +17,8 @@
             'b7ec67373e59aa3d': {
                 block_class: 'phone_alloka',
                 jivosite: false,
-                email: false
+                email: false,
+                format: '8 (#{XXX}) #{XXX}-#{XX}-#{XX}'
             }
         },
         trackable_source_types:  ["type_in", "referrer", "utm"],
