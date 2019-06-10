@@ -31,7 +31,7 @@ class CaptureFormOrderReceived extends Mailable
     public function build()
     {
         return $this
-            ->from('admin@aliro.ru')
+            ->from('aliro.ru')
             ->subject('Заявка с сайта')
             ->view('emails.capture_form_order_notification');
     }
