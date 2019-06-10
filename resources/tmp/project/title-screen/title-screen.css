@@ -3,11 +3,11 @@
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  margin-top: 54px;
+  padding-top: 54px;
 }
 
 @media (min-width:768px) {
   .title-screen {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
