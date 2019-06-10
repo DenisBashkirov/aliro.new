@@ -1,3 +1,40 @@
+.grid-cols-3 {
+  width: calc(100% + 30px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: -30px -15px 0 -15px;
+}
+
+.grid-cols-3>* {
+  margin: 30px 15px 0 15px;
+  width: calc((100% - 30px * 3)/ 3 - .5px);
+  box-sizing: border-box;
+}
+
+.grid-cols-3>* {
+  width: calc(((100% - 30px) - 2 * 30px)/ 3);
+}
+
+@supports (display:grid) {
+  .grid-cols-3 {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 0;
+  }
+
+  .grid-cols-3>* {
+    margin: 0;
+    width: initial;
+    height: auto;
+  }
+}
+
 .xl-grid-cols-4>* {
   max-width: calc(100vw - 40px);
 }
@@ -15,6 +52,39 @@
 }
 
 @media (min-width:768px) {
+  .md-grid-cols-3 {
+    width: calc(100% + 30px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: -30px -15px 0 -15px;
+  }
+
+  .md-grid-cols-3>* {
+    margin: 30px 15px 0 15px;
+    width: calc((100% - 30px * 3)/ 3 - .5px);
+    box-sizing: border-box;
+  }
+
+@supports (display:grid) {
+    .md-grid-cols-3 {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      margin: 0;
+    }
+
+    .md-grid-cols-3>* {
+      margin: 0;
+      width: initial;
+      height: auto;
+    }
+}
+
   .xl-grid-cols-3>* {
     width: calc(((1200px - 30px) - 2 * 30px)/ 3);
   }
@@ -46,7 +116,6 @@
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 
@@ -82,7 +151,6 @@
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 
@@ -126,7 +194,6 @@
       grid-template-columns: repeat(4,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 
@@ -164,7 +231,6 @@
       grid-template-columns: repeat(3,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 

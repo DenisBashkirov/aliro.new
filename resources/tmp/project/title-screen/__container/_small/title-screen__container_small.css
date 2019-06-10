@@ -1,6 +1,5 @@
 .title-screen__container_small {
-  min-height: 180px;
-  margin-top: 54px;
+  min-height: 200px;
 }
 
 .title-screen__container_small .title-screen__page-title {
@@ -9,7 +8,6 @@
 
 @media (min-width:768px) {
   .title-screen__container_small {
-    min-height: 250px;
-    margin-top: 60px;
+    min-height: 350px;
   }
 }

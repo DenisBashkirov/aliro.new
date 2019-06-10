@@ -90,6 +90,16 @@ class PagesOutputController extends FrontendBaseController
         return $this->renderOutput();
     }
 
+    public function service($page_slug)
+    {
+        $this->template .= '.' . $page_slug;
+        $this->title_screen_size = 'small';
+
+        $this->page = Page::where('slug', $page_slug)->first();
+
+        return $this->renderOutput();
+    }
+
 
     public function contacts()
     {

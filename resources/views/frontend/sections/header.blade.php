@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="nav__item hidden">
+                <div class="nav__item">
                     <div>Сервис</div>
                     <div class="nav__item-arrow"><span class="icon-arrow"></span></div>
                     <div class="nav__dropdown">
@@ -115,9 +115,8 @@
                                 <span>назад</span>
                             </div>
                             <div class="nav__dropdown-list">
-                                <a href="#" class="nav__dropdown-item">Кредит</a>
-                                <a href="#" class="nav__dropdown-item">Гарантия</a>
-                                <a href="#" class="nav__dropdown-item">Замер и монтаж</a>
+                                <a href="{{ route('service', 'credit') }}" class="nav__dropdown-item">Кредит</a>
+                                <a href="{{ route('service', 'garantiya') }}" class="nav__dropdown-item">Гарантия</a>
                             </div>
                         </div>
                     </div>

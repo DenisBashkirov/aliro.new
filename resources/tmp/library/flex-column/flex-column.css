@@ -1,0 +1,10 @@
+@media (max-width:767px) {
+  .flex-column-sm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-column-sm>:not(:first-child) {
+    margin-top: 30px;
+  }
+}

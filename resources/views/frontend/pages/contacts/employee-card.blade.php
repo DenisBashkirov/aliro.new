@@ -12,10 +12,12 @@
             @if(isset($position))
                 <p class="employee-card__position">{{ $position }}</p>
             @endif
-            <a href="tel:{{ $phone }}" class="employee-card__phone text-iconed link">
-                <span class="icon-phone"></span>
-                <span>{{ $phone }}</span>
-            </a>
+            @if(isset($phone))
+                <a href="tel:{{ $phone }}" class="employee-card__phone text-iconed link">
+                    <span class="icon-phone"></span>
+                    <span>{{ $phone }}</span>
+                </a>
+            @endif
             <a href="mailto:{{ $email }}" class="employee-card__email text-iconed link">
                 <span class="icon-email"></span>
                 <span>{{ $email }}</span>

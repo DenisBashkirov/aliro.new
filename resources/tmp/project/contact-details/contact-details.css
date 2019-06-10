@@ -7,7 +7,3 @@
 .contact-details>:not(:first-child) {
   margin-top: 8px;
 }
-
-.contact-details a {
-  display: block;
-}

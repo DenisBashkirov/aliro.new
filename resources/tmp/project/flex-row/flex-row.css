@@ -1,0 +1,27 @@
+.flex-row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-2>* {
+  margin-right: 30px;
+}
+
+.flex-row-2>:nth-child(2n) {
+  margin-right: 0;
+}
+
+@media (min-width:768px) {
+  .md-flex-row-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .md-flex-row-2>* {
+    margin-right: 30px;
+  }
+
+  .md-flex-row-2>:nth-child(2n) {
+    margin-right: 0;
+  }
+}

@@ -23,7 +23,6 @@
       grid-template-columns: repeat(3,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 
@@ -59,7 +58,6 @@
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      align-items: start;
       margin: 0;
     }
 

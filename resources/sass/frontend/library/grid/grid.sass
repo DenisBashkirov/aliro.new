@@ -1,5 +1,19 @@
 @import "../../bootstrap"
 
+.grid-cols-3
+  @include grid(3)
+
+    & > *
+      width: calc(((100% - #{$grid-column-gap}) - 2 * #{$grid-column-gap}) / 3)
+
+
+
+.md-grid-cols-3
+  @media ($brpt_md)
+    @include grid(3)
+
+
+
 .xl-grid-cols-4
 
   & > *

@@ -20,35 +20,30 @@
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Шестакова Анжела',
                                 'position'=>'руководитель салона окон',
-                                'phone'=>'8-918-141-05-82',
                                 'email'=>'shestakova.anzhela@aliro.ru'
                             ]) @endcomponent
 
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Первышева Надежда',
                                 'position'=>'менеджер по расчётам',
-                                'phone'=>'8-918-141-05-82',
                                 'email'=>'pervysheva.nadezhda@aliro.ru'
                             ]) @endcomponent
 
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Уколова Галина',
                                 'position'=>'менеджер по расчётам',
-                                'phone'=>'8-918-141-05-82',
                                 'email'=>'ukolova.galina@aliro.ru'
                             ]) @endcomponent
 
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Бондаренко Елена',
                                 'position'=>'менеджер по расчётам',
-                                'phone'=>'8-918-141-05-82',
                                 'email'=>'bondarenko.elena@aliro.ru'
                             ]) @endcomponent
 
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Волков Дмитрий',
                                 'position'=>'начальник бригады',
-                                'phone'=>'8-918-141-05-82',
                                 'email'=>'volkov.dmitriy@aliro.ru'
                             ]) @endcomponent
 
