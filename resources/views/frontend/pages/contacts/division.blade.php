@@ -18,7 +18,7 @@
             </div>
 
             @if(isset($phone))
-                <a href="tel:+{{ $phone }}" class="contacts-division__address text-iconed link">
+                <a href="tel:{{ $phone }}" class="contacts-division__address text-iconed link">
                     <span class="icon-phone text_red"></span>
                     <span>{{ $phone }}</span>
                 </a>
