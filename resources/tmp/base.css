@@ -163,6 +163,7 @@ video {
 a {
   color: #fb0000;
   text-decoration: none;
+  cursor: pointer!important;
 }
 
 a:hover {
