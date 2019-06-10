@@ -113,9 +113,9 @@
                             <span>г. Краснодар, ул. Калинина, 258</span>
                         </div>
 
-                        <a href="tel:88612139292" class="contacts-division__address text-iconed link phone_alloka">
+                        <div class="contacts-division__address text-iconed link">
                             <span class="icon-phone text_red"></span>
-                            <span>8 (861) 213-92-92</span>
+                            <a href="tel:88612139292" class="phone_alloka">8 (861) 213-92-92</a>
                         </a>
 
                     </div>
