@@ -23,7 +23,7 @@
     RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
     RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-
-
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://aliro.ru [L,R=301]
 
 </IfModule>
