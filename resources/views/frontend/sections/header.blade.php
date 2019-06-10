@@ -116,7 +116,7 @@
                             </div>
                             <div class="nav__dropdown-list">
                                 <a href="{{ route('service', 'credit') }}" class="nav__dropdown-item">Кредит</a>
-                                <a href="{{ route('service', 'garantiya') }}" class="nav__dropdown-item">Гарантия</a>
+                                <a href="{{ route('service', 'garantiya') }}" class="nav__dropdown-item hidden">Гарантия</a>
                             </div>
                         </div>
                     </div>
