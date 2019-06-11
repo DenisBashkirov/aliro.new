@@ -77,10 +77,12 @@
                             <div class="nav__category hidden">
                                 <div class="nav__category-title">Комплектующие</div>
                                 <div class="nav__category-content">
+                                    {{--
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Стеклопакеты</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Фурнитура</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Подоконники</a>
                                     <a href="{{ route('products', '') }}" class="nav__dropdown-item">Москитные сетки</a>
+                                    --}}
                                 </div>
                             </div>
                         </div>
