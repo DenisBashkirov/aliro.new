@@ -2,8 +2,13 @@
 <html>
 <head>
 
-    @if(env('APP_ENV') != 'local' && env('APP_METRICS'))
-        @include('frontend.sources.metrics')
+    @if(env('APP_ENV') == 'production')
+        @if(env('APP_METRICS'))
+            @include('frontend.sources.analytics.metrics')
+        @endif
+        @if(env('APP_CALLTRACKING'))
+            @include('frontend.sources.analytics.calltracking')
+        @endif
     @endif
 
     <link rel="icon" href="{{ asset('favicons/icon-16x16.png') }}" sizes="16x16" type="image/png">
@@ -19,6 +24,8 @@
     @include('frontend.sources.styles')
 
     @yield('page_head')
+
+    @include('frontend.sources.lead-capturing.jivosite')
 
 </head>
 <body>
