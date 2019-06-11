@@ -19,7 +19,7 @@
 
                             @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Шестакова Анжела',
-                                'position'=>'руководитель салона окон',
+                                'position'=>'руководитель розничного отдела',
                                 'email'=>'shestakova.anzhela@aliro.ru'
                             ]) @endcomponent
 
