@@ -32,7 +32,7 @@
                         <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Официальный партнёр Rehau</h3>
                         <ul class="rubrics-about__card-list list list_dotted">
                             <li>глянцевая поверхность</li>
-                            <li>срок слуюбы 50 лет</li>
+                            <li>срок службы 50 лет</li>
                             <li>фигурный профиль</li>
                         </ul>
                         <div class="rubric-about__link">
@@ -51,9 +51,9 @@
                     <div class="rubrics-about__card-content">
                         <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Работа с дилерами</h3>
                         <ul class="rubrics-about__card-list list list_dotted">
-                            <li>глянцевая поверхность</li>
-                            <li>срок слуюбы 50 лет</li>
-                            <li>фигурный профиль</li>
+                            <li>предоставление образцов</li>
+                            <li>доставка до вашего склада</li>
+                            <li>ПВХ и алюминий</li>
                         </ul>
                         <div class="rubric-about__link">
                             <a href="#" class="link link_arrowed hidden">
@@ -71,9 +71,9 @@
                     <div class="rubrics-about__card-content">
                         <h3 class="rubrics-about__card-title h2_mini font-weight_extrabold">Работа с застройщиками</h3>
                         <ul class="rubrics-about__card-list list list_dotted">
-                            <li>глянцевая поверхность</li>
-                            <li>срок слуюбы 50 лет</li>
-                            <li>фигурный профиль</li>
+                            <li>комплексное остекление</li>
+                            <li>доставка и монтаж</li>
+                            <li>изделия любой сложности</li>
                         </ul>
                         <div class="rubric-about__link">
                             <a href="#" class="link link_arrowed hidden">
