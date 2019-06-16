@@ -50,12 +50,12 @@
                         </div>
 
                         <div>
-                            <form action="{{ route('thanks') }}" class="form" method="post">
+                            <form action="{{ route('thanks') }}" class="form alloka-catch-form" method="post">
                                 @csrf
                                 <input type="hidden" name="capture_form_name" value="заявка на кредит">
                                 <div class="form-group form-group_vertical form-group_large group_large-x4">
-                                    <input type="text" class="form-group__input" name="name" placeholder="Ваше имя" required>
-                                    <input type="text" class="form-group__input js-mask_phone" name="phone" placeholder="Телефон" required>
+                                    <input type="text" class="form-group__input alloka-catch-form-input-name" name="name" placeholder="Ваше имя" required>
+                                    <input type="text" class="form-group__input js-mask_phone alloka-catch-form-input-phone" name="phone" placeholder="Телефон" required>
                                     <input type="text" class="form-group__input" name="period" placeholder="Желаемый срок кредита" required>
                                     <button type="submit" class="form-group__submit">Отправить заявку</button>
                                 </div>
