@@ -16,12 +16,12 @@
             </div>
 
             <div class="free-measuring-section__form">
-                <form action="{{ route('thanks') }}" class="form" method="post">
+                <form action="{{ route('thanks') }}" class="form alloka-catch-form" method="post">
                     @csrf
                     <input type="hidden" name="capture_form_name" value="запись на замер">
                     <div class="form-group form-group_horizontal form-group_large group_large-x3">
-                        <input type="text" class="form-group__input" name="name" placeholder="Ваше имя" required>
-                        <input type="text" class="form-group__input js-mask_phone" name="phone" placeholder="Телефон" required>
+                        <input type="text" class="form-group__input alloka-catch-form-input-name" name="name" placeholder="Ваше имя" required>
+                        <input type="text" class="form-group__input js-mask_phone alloka-catch-form-input-phone" name="phone" placeholder="Телефон" required>
                         <button type="submit" class="form-group__submit">Записаться</button>
                     </div>
                     <p class="form__agreement text_tiny">Нажимая кнопку "Записаться" вы даете согласие на обработку персональных данных</p>

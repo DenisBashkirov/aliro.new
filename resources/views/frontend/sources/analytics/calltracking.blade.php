@@ -14,4 +14,7 @@
         use_geo: true
     };
 </script>
+
 <script src="https://analytics.alloka.ru/v4/alloka.js" type="text/javascript"></script>
+
+<script src="https://analytics.alloka.ru/integrations/catch_form.js" type="text/javascript"></script>
