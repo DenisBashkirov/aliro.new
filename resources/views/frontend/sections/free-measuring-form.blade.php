@@ -25,10 +25,10 @@
                         <button type="submit" class="form-group__submit">Записаться</button>
                     </div>
                     <p class="form__agreement text_tiny">Нажимая кнопку "Записаться" вы даете согласие на обработку персональных данных</p>
-                    <div class="free-measuring-section__worker">
+                    <!--<div class="free-measuring-section__worker">
                         <img src="{{ asset('img/sections/free-measuring-form/worker.png') }}" alt="Специались по замерам">
                         <p class="free-measuring-section__worker-label">Резаченко Кирилл - специалист по замерам</p>
-                    </div>
+                    </div>-->
                 </form>
             </div>
 
