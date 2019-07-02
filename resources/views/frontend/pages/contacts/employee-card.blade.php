@@ -1,7 +1,7 @@
 <div class="employee-card swiper-slide">
 
     <div class="employee-card__photo">
-        <img src="{{ asset('img/contacts/employee-placeholder.jpg') }}" alt="">
+        <img src="{{ asset('img/contacts/' . Str::slug($name) .'.jpg') }}" alt="{{ $name }}">
     </div>
 
     <div class="employee-card__body">
