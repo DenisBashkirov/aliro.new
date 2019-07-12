@@ -3,7 +3,7 @@
 @section('products_content')
 
     @component('frontend.pages.products.product-section_default', [
-        'title'=>'Металлопластиковые панораманые окна',
+        'title'=>'Металлопластиковые панорамные окна',
         'img_src'=>'img/products/' . $page->slug . '/1.jpg',
         'img_alt'=>'',
         'wrapper_inverse'=>false
@@ -16,7 +16,7 @@
     @endcomponent
 
     @component('frontend.pages.products.product-section_default', [
-        'title'=>'Алюминиевые панораманые окна',
+        'title'=>'Алюминиевые панорамные окна',
         'img_src'=>'img/products/' . $page->slug . '/2.jpg',
         'img_alt'=>'',
         'wrapper_inverse'=>true

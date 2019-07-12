@@ -30,12 +30,6 @@
                             ]) @endcomponent
 
                             @component('frontend.pages.contacts.employee-card', [
-                                'name'=>'Уколова Галина',
-                                'position'=>'менеджер по расчётам',
-                                'email'=>'ukolova.galina@aliro.ru'
-                            ]) @endcomponent
-
-                            @component('frontend.pages.contacts.employee-card', [
                                 'name'=>'Бондаренко Елена',
                                 'position'=>'менеджер по расчётам',
                                 'email'=>'bondarenko.elena@aliro.ru'
