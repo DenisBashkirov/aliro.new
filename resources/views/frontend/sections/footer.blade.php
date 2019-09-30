@@ -14,7 +14,7 @@
                     <a href="#" class="footer__section-link hidden">показать на карте</a>
                 </div>
                 <div class="footer__section">
-                    <a href="tel:88612139292" class="footer__section-heading phone_alloka">8 (861) 213-92-92</a>
+                    <a href="tel:88612139292" class="footer__section-heading mango-number">8 (861) 213-92-92</a>
                     <p class="footer__section-text hidden">сегодня: с 9<span class="sup">00</span> до 19<span class="sup">00</span></p>
                     <a href="#" class="footer__section-link hidden">график работы</a>
                 </div>

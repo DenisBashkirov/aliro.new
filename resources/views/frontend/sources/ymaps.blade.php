@@ -17,7 +17,7 @@
 
         ymapRetail.geoObjects.add(new ymaps.Placemark([45.042158, 38.941447], {
             //balloonContent: 'цвет <strong>красный</strong>',
-            iconCaption: 'Салон окон "Алиро"'
+            //iconCaption: 'Салон окон "Алиро"'
         }, {
             preset: 'islands#redDotIcon'
         }));
