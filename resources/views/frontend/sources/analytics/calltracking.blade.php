@@ -23,6 +23,7 @@
 
 
 <!-- Calltracking.ru -->
+<!--
 <script type="text/javascript">
     (function ct_load_script() {
         var ct = document.createElement('script'); ct.type = 'text/javascript';
@@ -30,6 +31,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
     })();
 </script>
+-->
 
 
 <!-- Mango Office -->
