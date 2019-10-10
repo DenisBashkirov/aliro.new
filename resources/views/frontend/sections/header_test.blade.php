@@ -59,7 +59,7 @@
         </div>
 
         <div class="header__phone">
-            <a href="tel:88612139292" class="mango-number">8(861)213-92-92</a>
+            <a href="tel:88612139292" class="mango-number phone_alloka">8(861)213-92-92</a>
         </div>
 
         <div class="header__hamburger">
