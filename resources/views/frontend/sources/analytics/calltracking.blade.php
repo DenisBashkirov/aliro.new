@@ -1,5 +1,5 @@
 <!-- Alloka calltracking -->
-<!--
+
 <script type="text/javascript">
 
 
@@ -9,7 +9,7 @@
                 block_class: 'phone_alloka',
                 jivosite: false,
                 email: false,
-                format: '8 (#{XXX}) #{XXX}-#{XX}-#{XX}'
+                format: '8 (#{XXX}) #{XXX} #{XX} #{XX}'
             }
         },
         trackable_source_types:  ["type_in", "referrer", "utm"],
@@ -19,7 +19,7 @@
 </script>
 <script src="https://analytics.alloka.ru/v4/alloka.js" type="text/javascript"></script>
 
-<script src="https://analytics.alloka.ru/integrations/catch_form.js" type="text/javascript"></script>-->
+<script src="https://analytics.alloka.ru/integrations/catch_form.js" type="text/javascript"></script>
 
 
 <!-- Calltracking.ru -->
@@ -35,6 +35,7 @@
 
 
 <!-- Mango Office -->
+<!--
 <script>
     (function(w, d, u, i, o, s, p) {
         if (d.getElementById(i)) { return; } w['MangoObject'] = o;
@@ -44,3 +45,4 @@
     }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
     mgo({calltracking: {id: 18761, elements: [{"selector":".mango-number"}]}});
 </script>
+-->
